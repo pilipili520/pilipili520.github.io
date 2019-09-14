@@ -134,7 +134,7 @@
 var gitalk = new Gitalk({
   clientID: 'e9dc742df01536e88e12',
         clientSecret: 'ae9c7c98d422233c89a182200df7306f37ee90a1',
-        id: location.pathname,
+        id: md5(location.pathname),
         repo: 'pilipili520.github.io',
         owner: 'pilipili520',
         admin: ['pilipili520'],
