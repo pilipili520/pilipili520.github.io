@@ -10,18 +10,18 @@
   
   
   
-  <meta name="description" content="题目描述：给定一个整数数组 nums ，找出一个序列中乘积最大的连续子序列（该序列至少包含一个数）。示例 1： 123输入: [2,3,-2,4]输出: 6解释: 子数组 [2,3] 有最大乘积 6。  示例 2:   123输入: [-2,0,-1]输出: 0解释: 结果不能为 2, 因为 [-2,-1] 不是子数组。  这个与课上讲过的最大子段和其实是一样的，但是那个负数的我没有想到合适的处理">
+  <meta name="description" content="题目描述：给定一个整数数组 nums ，找出一个序列中乘积最大的连续子序列（该序列至少包含一个数）。示例 1： 123输入: [2,3,-2,4]输出: 6解释: 子数组 [2,3] 有最大乘积 6。  示例 2:   123输入: [-2,0,-1]输出: 0解释: 结果不能为 2, 因为 [-2,-1] 不是子数组。  这个与课上讲过的最大子段和其实是一样的，但是那个负数的我没有想到合适的处">
 <meta name="keywords" content="dp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="leetcode152乘积最大子序列">
 <meta property="og:url" content="http://yoursite.com/2019/09/15/第二篇/index.html">
 <meta property="og:site_name" content="王子瑜的不正经日常">
-<meta property="og:description" content="题目描述：给定一个整数数组 nums ，找出一个序列中乘积最大的连续子序列（该序列至少包含一个数）。示例 1： 123输入: [2,3,-2,4]输出: 6解释: 子数组 [2,3] 有最大乘积 6。  示例 2:   123输入: [-2,0,-1]输出: 0解释: 结果不能为 2, 因为 [-2,-1] 不是子数组。  这个与课上讲过的最大子段和其实是一样的，但是那个负数的我没有想到合适的处理">
+<meta property="og:description" content="题目描述：给定一个整数数组 nums ，找出一个序列中乘积最大的连续子序列（该序列至少包含一个数）。示例 1： 123输入: [2,3,-2,4]输出: 6解释: 子数组 [2,3] 有最大乘积 6。  示例 2:   123输入: [-2,0,-1]输出: 0解释: 结果不能为 2, 因为 [-2,-1] 不是子数组。  这个与课上讲过的最大子段和其实是一样的，但是那个负数的我没有想到合适的处">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-15T10:35:05.232Z">
+<meta property="og:updated_time" content="2019-09-17T01:41:11.789Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="leetcode152乘积最大子序列">
-<meta name="twitter:description" content="题目描述：给定一个整数数组 nums ，找出一个序列中乘积最大的连续子序列（该序列至少包含一个数）。示例 1： 123输入: [2,3,-2,4]输出: 6解释: 子数组 [2,3] 有最大乘积 6。  示例 2:   123输入: [-2,0,-1]输出: 0解释: 结果不能为 2, 因为 [-2,-1] 不是子数组。  这个与课上讲过的最大子段和其实是一样的，但是那个负数的我没有想到合适的处理">
+<meta name="twitter:description" content="题目描述：给定一个整数数组 nums ，找出一个序列中乘积最大的连续子序列（该序列至少包含一个数）。示例 1： 123输入: [2,3,-2,4]输出: 6解释: 子数组 [2,3] 有最大乘积 6。  示例 2:   123输入: [-2,0,-1]输出: 0解释: 结果不能为 2, 因为 [-2,-1] 不是子数组。  这个与课上讲过的最大子段和其实是一样的，但是那个负数的我没有想到合适的处">
   
     <link rel="alternate" href="/atom.xml" title="王子瑜的不正经日常" type="application/atom+xml">
   
@@ -105,7 +105,8 @@
     
     <div class="article-content article-content-cloud" itemprop="articleBody">
       
-        <h1 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h1><p>给定一个整数数组 nums ，找出一个序列中乘积最大的连续子序列（该序列至少包含一个数）。<br>示例 1：</p>
+        <a id="more"></a>
+<h1 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h1><p>给定一个整数数组 nums ，找出一个序列中乘积最大的连续子序列（该序列至少包含一个数）。<br>示例 1：</p>
 <div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: [2,3,-2,4]</span><br><span class="line">输出: 6</span><br><span class="line">解释: 子数组 [2,3] 有最大乘积 6。</span><br></pre></td></tr></table></figure></div>
 
 <p>示例 2:  </p>
@@ -194,7 +195,7 @@ gitalk.render('gitalkContainer')
   <div class="widget-box">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/leetcode/">leetcode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/web前端/">web前端</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C/">C++</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/leetcode/">leetcode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/web前端/">web前端</a></li></ul>
     </div>
   </div>
 
@@ -204,7 +205,7 @@ gitalk.render('gitalkContainer')
   <div class="widget-box">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/dp/">dp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo搭建/">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/dp/">dp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo搭建/">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string类/">string类</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li></ul>
     </div>
   </div>
 
@@ -214,7 +215,7 @@ gitalk.render('gitalkContainer')
   <div class="widget-box">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/dp/" style="font-size: 20px;">dp</a> <a href="/tags/hexo搭建/" style="font-size: 10px;">hexo搭建</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a>
+      <a href="/tags/dp/" style="font-size: 20px;">dp</a> <a href="/tags/hexo搭建/" style="font-size: 10px;">hexo搭建</a> <a href="/tags/string类/" style="font-size: 10px;">string类</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a>
     </div>
   </div>
 

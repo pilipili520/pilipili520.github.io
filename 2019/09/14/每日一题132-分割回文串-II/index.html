@@ -10,18 +10,18 @@
   
   
   
-  <meta name="description" content="题目：给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回符合要求的最少分割次数。 123输入: &amp;quot;aab&amp;quot;输出: 1解释: 进行一次分割就可将 s 分割成 [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;] 这样两个回文子串。  这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码 123456789101112131">
+  <meta name="description" content="题目：给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回符合要求的最少分割次数。 123输入: &amp;quot;aab&amp;quot;输出: 1解释: 进行一次分割就可将 s 分割成 [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;] 这样两个回文子串。  这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码 12345678910111213">
 <meta name="keywords" content="dp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="每日一题132. 分割回文串 II">
 <meta property="og:url" content="http://yoursite.com/2019/09/14/每日一题132-分割回文串-II/index.html">
 <meta property="og:site_name" content="王子瑜的不正经日常">
-<meta property="og:description" content="题目：给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回符合要求的最少分割次数。 123输入: &amp;quot;aab&amp;quot;输出: 1解释: 进行一次分割就可将 s 分割成 [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;] 这样两个回文子串。  这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码 123456789101112131">
+<meta property="og:description" content="题目：给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回符合要求的最少分割次数。 123输入: &amp;quot;aab&amp;quot;输出: 1解释: 进行一次分割就可将 s 分割成 [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;] 这样两个回文子串。  这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码 12345678910111213">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-15T10:29:11.327Z">
+<meta property="og:updated_time" content="2019-09-17T01:41:23.163Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="每日一题132. 分割回文串 II">
-<meta name="twitter:description" content="题目：给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回符合要求的最少分割次数。 123输入: &amp;quot;aab&amp;quot;输出: 1解释: 进行一次分割就可将 s 分割成 [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;] 这样两个回文子串。  这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码 123456789101112131">
+<meta name="twitter:description" content="题目：给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回符合要求的最少分割次数。 123输入: &amp;quot;aab&amp;quot;输出: 1解释: 进行一次分割就可将 s 分割成 [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;] 这样两个回文子串。  这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码 12345678910111213">
   
     <link rel="alternate" href="/atom.xml" title="王子瑜的不正经日常" type="application/atom+xml">
   
@@ -105,7 +105,8 @@
     
     <div class="article-content article-content-cloud" itemprop="articleBody">
       
-        <h1 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h1><p>给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。<br>返回符合要求的最少分割次数。</p>
+        <a id="more"></a>
+<h1 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h1><p>给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。<br>返回符合要求的最少分割次数。</p>
 <div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;aab&quot;</span><br><span class="line">输出: 1</span><br><span class="line">解释: 进行一次分割就可将 s 分割成 [&quot;aa&quot;,&quot;b&quot;] 这样两个回文子串。</span><br></pre></td></tr></table></figure></div>
 
 <p>这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码</p>
@@ -191,7 +192,7 @@ gitalk.render('gitalkContainer')
   <div class="widget-box">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/leetcode/">leetcode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/web前端/">web前端</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C/">C++</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/leetcode/">leetcode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/web前端/">web前端</a></li></ul>
     </div>
   </div>
 
@@ -201,7 +202,7 @@ gitalk.render('gitalkContainer')
   <div class="widget-box">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/dp/">dp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo搭建/">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/dp/">dp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo搭建/">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string类/">string类</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li></ul>
     </div>
   </div>
 
@@ -211,7 +212,7 @@ gitalk.render('gitalkContainer')
   <div class="widget-box">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/dp/" style="font-size: 20px;">dp</a> <a href="/tags/hexo搭建/" style="font-size: 10px;">hexo搭建</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a>
+      <a href="/tags/dp/" style="font-size: 20px;">dp</a> <a href="/tags/hexo搭建/" style="font-size: 10px;">hexo搭建</a> <a href="/tags/string类/" style="font-size: 10px;">string类</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a>
     </div>
   </div>
 
