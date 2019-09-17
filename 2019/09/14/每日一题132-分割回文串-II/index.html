@@ -10,18 +10,18 @@
   
   
   
-  <meta name="description" content="题目：给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回符合要求的最少分割次数。 123输入: &amp;quot;aab&amp;quot;输出: 1解释: 进行一次分割就可将 s 分割成 [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;] 这样两个回文子串。  这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码 12345678910111213">
+  <meta name="description" content="题目：给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回符合要求的最少分割次数。 123输入: &amp;quot;aab&amp;quot;输出: 1解释: 进行一次分割就可将 s 分割成 [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;] 这样两个回文子串。  这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码">
 <meta name="keywords" content="dp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="每日一题132. 分割回文串 II">
 <meta property="og:url" content="http://yoursite.com/2019/09/14/每日一题132-分割回文串-II/index.html">
 <meta property="og:site_name" content="王子瑜的不正经日常">
-<meta property="og:description" content="题目：给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回符合要求的最少分割次数。 123输入: &amp;quot;aab&amp;quot;输出: 1解释: 进行一次分割就可将 s 分割成 [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;] 这样两个回文子串。  这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码 12345678910111213">
+<meta property="og:description" content="题目：给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回符合要求的最少分割次数。 123输入: &amp;quot;aab&amp;quot;输出: 1解释: 进行一次分割就可将 s 分割成 [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;] 这样两个回文子串。  这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-17T01:41:23.163Z">
+<meta property="og:updated_time" content="2019-09-17T01:50:09.082Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="每日一题132. 分割回文串 II">
-<meta name="twitter:description" content="题目：给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回符合要求的最少分割次数。 123输入: &amp;quot;aab&amp;quot;输出: 1解释: 进行一次分割就可将 s 分割成 [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;] 这样两个回文子串。  这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码 12345678910111213">
+<meta name="twitter:description" content="题目：给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回符合要求的最少分割次数。 123输入: &amp;quot;aab&amp;quot;输出: 1解释: 进行一次分割就可将 s 分割成 [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;] 这样两个回文子串。  这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码">
   
     <link rel="alternate" href="/atom.xml" title="王子瑜的不正经日常" type="application/atom+xml">
   
@@ -105,11 +105,11 @@
     
     <div class="article-content article-content-cloud" itemprop="articleBody">
       
-        <a id="more"></a>
-<h1 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h1><p>给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。<br>返回符合要求的最少分割次数。</p>
+        <h1 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h1><p>给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。<br>返回符合要求的最少分割次数。</p>
 <div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;aab&quot;</span><br><span class="line">输出: 1</span><br><span class="line">解释: 进行一次分割就可将 s 分割成 [&quot;aa&quot;,&quot;b&quot;] 这样两个回文子串。</span><br></pre></td></tr></table></figure></div>
 
 <p>这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码</p>
+<a id="more"></a>
 <div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minCut</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = s.length();</span><br><span class="line">        <span class="keyword">int</span>[] cut = <span class="keyword">new</span> <span class="keyword">int</span>[n+<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt;= n;i++)&#123;</span><br><span class="line">            cut[i] = i - <span class="number">1</span>;<span class="comment">//cut应该是切的次数</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; n;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>;i - j &gt;= <span class="number">0</span> &amp;&amp; i + j &lt; n&amp;&amp; s.charAt(i - j) == s.charAt(i + j);j++)&#123;<span class="comment">//以i为中心，的奇数的长度</span></span><br><span class="line">                cut[i + j + <span class="number">1</span>] = Math.min(cut[i + j +<span class="number">1</span>],<span class="number">1</span> + cut[i - j]);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>;i - j + <span class="number">1</span> &gt;= <span class="number">0</span> &amp;&amp; i + j &lt; n &amp;&amp; s.charAt(i - j + <span class="number">1</span>) == s.charAt(i + j);j++)&#123;<span class="comment">//i和i + 1长度为偶数的时候</span></span><br><span class="line">                cut[i + j + <span class="number">1</span>] = Math.min(cut[i + j + <span class="number">1</span>],<span class="number">1</span> + cut[i - j + <span class="number">1</span>]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cut[n];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
 <p>大佬用的dp，cut表示到第i个字符最少切的刀数使得所有子串都是回文的，我们以长度为奇数的时候为例，在长度为i+j+1的时候，此时我们有i-j到i+j都是回文的，到i - j的时候我们切了，cut[i-j]刀，秉承着最优子结构性质，我们保证cut是到目前为止的最少刀数，我们选择此时不把i-j到i+j切出来，或者切一刀把这一小段给切出来，</p>
