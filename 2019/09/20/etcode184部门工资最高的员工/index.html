@@ -1,3 +1,4 @@
+<script src="\live2d-widget\autoload.js"></script>
 <!DOCTYPE html>
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
@@ -11,13 +12,14 @@
   
   
   <meta name="description" content="题目：12345678910111213141516171819202122232425262728Employee 表包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id。+----+-------+--------+--------------+| Id | Name  | Salary | DepartmentId |+----+-------+----">
+<meta name="keywords" content="MySQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="leetcode184部门工资最高的员工">
 <meta property="og:url" content="https://www.wangziyu666.top/2019/09/20/etcode184部门工资最高的员工/index.html">
 <meta property="og:site_name" content="王子瑜的不正经日常">
 <meta property="og:description" content="题目：12345678910111213141516171819202122232425262728Employee 表包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id。+----+-------+--------+--------------+| Id | Name  | Salary | DepartmentId |+----+-------+----">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-20T00:12:08.245Z">
+<meta property="og:updated_time" content="2019-09-20T06:07:35.334Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="leetcode184部门工资最高的员工">
 <meta name="twitter:description" content="题目：12345678910111213141516171819202122232425262728Employee 表包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id。+----+-------+--------+--------------+| Id | Name  | Salary | DepartmentId |+----+-------+----">
@@ -101,7 +103,13 @@
   <time datetime="2019-09-19T23:36:58.000Z" itemprop="datePublished">2019-09-20</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/leetcode/">leetcode</a>
+  </div>
+
     
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li></ul>
+
   </div>
   
     <span id="busuanzi_container_page_pv">
@@ -115,7 +123,9 @@
       
         <h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">Employee 表包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id。</span><br><span class="line"></span><br><span class="line">+----+-------+--------+--------------+</span><br><span class="line">| Id | Name  | Salary | DepartmentId |</span><br><span class="line">+----+-------+--------+--------------+</span><br><span class="line">| 1  | Joe   | 70000  | 1            |</span><br><span class="line">| 2  | Henry | 80000  | 2            |</span><br><span class="line">| 3  | Sam   | 60000  | 2            |</span><br><span class="line">| 4  | Max   | 90000  | 1            |</span><br><span class="line">+----+-------+--------+--------------+</span><br><span class="line"></span><br><span class="line">Department 表包含公司所有部门的信息。</span><br><span class="line"></span><br><span class="line">+----+----------+</span><br><span class="line">| Id | Name     |</span><br><span class="line">+----+----------+</span><br><span class="line">| 1  | IT       |</span><br><span class="line">| 2  | Sales    |</span><br><span class="line">+----+----------+</span><br><span class="line"></span><br><span class="line">编写一个 SQL 查询，找出每个部门工资最高的员工。例如，根据上述给定的表格，Max 在 IT 部门有最高工资，Henry 在 Sales 部门有最高工资。</span><br><span class="line"></span><br><span class="line">+------------+----------+--------+</span><br><span class="line">| Department | Employee | Salary |</span><br><span class="line">+------------+----------+--------+</span><br><span class="line">| IT         | Max      | 90000  |</span><br><span class="line">| Sales      | Henry    | 80000  |</span><br><span class="line">+------------+----------+--------+</span><br></pre></td></tr></table></figure></div>
 
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/department-highest-salary" target="_blank" rel="noopener">https://leetcode-cn.com/problems/department-highest-salary</a><br>这个题比较有意思，我还是第一次看见MySQL的，回忆数据库的语法:  </p>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/department-highest-salary" target="_blank" rel="noopener">https://leetcode-cn.com/problems/department-highest-salary</a></p>
+<a id="more"></a>
+<p>这个题比较有意思，我还是第一次看见MySQL的，回忆数据库的语法:  </p>
 <div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">SELECT [columnName, …] funName FROM tableName [WHERE condition] [GROUP BY columnName, … [WITHROLLUP]] [HAVING condition];</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">funName表示要做的聚合操作，即聚合函数</span><br><span class="line">常用有sum(columnName), count(*|columnName|number),</span><br><span class="line">max(columnName), min(columnName),avg(columnName)</span><br><span class="line"></span><br><span class="line">GROUP BY 分类聚合，写在列名前面</span><br><span class="line">WITH ROLLUP 对分类聚合后的结果进行再汇总</span><br><span class="line">HAVING分类后的结果再进行条件过滤</span><br><span class="line">HAVING和WHERE区别，HAVING对聚合后的结果进行条件过滤，</span><br><span class="line">WHERE在聚合前。尽可能使用WHEREfunName表示要做的聚合操作，即聚合函数</span><br><span class="line"></span><br><span class="line">使用方法：</span><br><span class="line">1、内联结：</span><br><span class="line">将两个表中存在联结关系的字段符合联结关系的那些记录形成记录集的联结。</span><br><span class="line">Select A.Name from A INNER JOIN B ON A.id =B.id</span><br><span class="line"></span><br><span class="line">2、外联结：</span><br><span class="line">分为外左联结和外右联结。</span><br><span class="line">左联结A、B表的意思就是将表A中的全部记录和表B中联结的字段与表A的联结字段符合联结条件的那些记录形成的记录集的联结，这里注意的是最后出来的记录集会包括表A的全部记录。</span><br><span class="line">右联结A、B表的结果和左联结B、A的结果是一样的，也就是说：</span><br><span class="line">Select A.name B.name From A Left Join B On A.id=B.id</span><br><span class="line">和Select A.name B.name From B Right Join A onB.id=A.id执行后的结果是一样的。</span><br></pre></td></tr></table></figure></div>
 
 <p>我思考了一下，发现写不出来，就偷偷的看题解来学语法</p>
@@ -138,6 +148,15 @@
     
 <nav id="article-nav">
   <div class="article-nav-block">
+    
+      <a href="/2019/09/20/种常见寄存器的使用/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption"></strong>
+        <div class="article-nav-title">
+          
+            各种常见寄存器的使用
+          
+        </div>
+      </a>
     
   </div>
   <div class="article-nav-block">
@@ -195,7 +214,7 @@ gitalk.render('gitalkContainer')
   <div class="widget-box">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C/">C++</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/leetcode/">leetcode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/web前端/">web前端</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C/">C++</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/leetcode/">leetcode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/web前端/">web前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/讲座/">讲座</a></li></ul>
     </div>
   </div>
 
@@ -205,7 +224,7 @@ gitalk.render('gitalkContainer')
   <div class="widget-box">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/dp/">dp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo搭建/">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string类/">string类</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/">MySQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dp/">dp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo搭建/">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string类/">string类</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生物计算机/">生物计算机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/语法/">语法</a></li></ul>
     </div>
   </div>
 
@@ -215,7 +234,7 @@ gitalk.render('gitalkContainer')
   <div class="widget-box">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/dp/" style="font-size: 20px;">dp</a> <a href="/tags/hexo搭建/" style="font-size: 10px;">hexo搭建</a> <a href="/tags/string类/" style="font-size: 10px;">string类</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a>
+      <a href="/tags/MySQL/" style="font-size: 10px;">MySQL</a> <a href="/tags/dp/" style="font-size: 20px;">dp</a> <a href="/tags/hexo搭建/" style="font-size: 10px;">hexo搭建</a> <a href="/tags/string类/" style="font-size: 10px;">string类</a> <a href="/tags/操作系统/" style="font-size: 10px;">操作系统</a> <a href="/tags/生物计算机/" style="font-size: 10px;">生物计算机</a> <a href="/tags/语法/" style="font-size: 10px;">语法</a>
     </div>
   </div>
 
@@ -236,6 +255,10 @@ gitalk.render('gitalkContainer')
       <ul>
         
           <li>
+            <a href="/2019/09/20/种常见寄存器的使用/">各种常见寄存器的使用</a>
+          </li>
+        
+          <li>
             <a href="/2019/09/20/etcode184部门工资最高的员工/">leetcode184部门工资最高的员工</a>
           </li>
         
@@ -249,10 +272,6 @@ gitalk.render('gitalkContainer')
         
           <li>
             <a href="/2019/09/18/leetcode153寻找旋转排序数组中的最小值/">leetcode153寻找旋转排序数组中的最小值</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/17/c-的string类函数怎么记不住/">c++的string类函数怎么记不住</a>
           </li>
         
       </ul>
@@ -316,7 +335,7 @@ document.body.write(script);
   <div class="mobile-nav-img  mobile-nav-bottom"></div>
 </nav>    
   </div>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"display":"bottom","position":"left","width":150,"height":300,"bottom":-30,"jsonPath":"/live2dw/assets/haruto.model.json"},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"display":"bottom","position":"left","width":150,"height":300,"bottom":-30,"jsonPath":"live2d-widget-haruto"},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/love.js"></script>
