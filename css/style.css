@@ -185,7 +185,7 @@ html, body, #fullpage{
   height: 100%;
   width: 100%;
   z-index: 999999;
-  background-color: #FAF3E1;
+  background-color: #E6E6FA;
 }
 .loader {
   position: absolute;
@@ -216,15 +216,15 @@ html, body, #fullpage{
   box-sizing: border-box;
 }
 .load-top {
-  border-top-color: #FAF3E1;
+  border-top-color:  #FFB6C1;
   animation: roll-top 2s linear infinite;
 }
 .load-right {
-  border-right-color: #FAF3E1;
+  border-right-color:  #E1FFFF;
   animation: roll-right 2s linear infinite;
 }
 .load-bottom {
-  border-bottom-color: #FAF3E1;
+  border-bottom-color: #FFDAB9;
   animation: roll-bottom 2s linear infinite;
 }
 
@@ -795,6 +795,22 @@ html, body, #fullpage{
 #footer {
   box-shadow: 0 -1px 6px rgba(0, 0, 0, .3);
   padding: 4px;
+  color: #F5DEB3;
+}
+//底部爱心小图标跳动
+keyframes heartAnimate {
+    0%,100%{transform:scale(1);}
+    10%,30%{transform:scale(0.9);}
+    20%,40%,60%,80%{transform:scale(1.1);}
+    50%,70%{transform:scale(1.1);}
+}
+
+//图标所对应的span中的ID
+#heart {
+    animation: heartAnimate 1.33s ease-in-out infinite;
+}
+.with-love {
+    color: rgb(255, 113, 113);
 }
 @media screen and (max-width: 1200px){
   .global-width {
