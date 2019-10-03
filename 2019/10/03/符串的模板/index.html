@@ -6,18 +6,22 @@
   
 
   
-  <title>王子瑜的不正经日常</title>
+  <title>字符串的模板 | 王子瑜的不正经日常</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="王子瑜的不正经日常">
-<meta property="og:url" content="https://www.wangziyu666.top/index.html">
+  <meta name="description" content="来自于各路大神1.滑动窗口leetcode样板题定义一个大小固定的窗口让后再处理 123456int windowSize;for (int i = 0; i + windowSize - 1 &amp;lt; s.length(); i++) &amp;#123;        String ten = s.substring(i, i + windowSize);        if (what?)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字符串的模板">
+<meta property="og:url" content="https://www.wangziyu666.top/2019/10/03/符串的模板/index.html">
 <meta property="og:site_name" content="王子瑜的不正经日常">
+<meta property="og:description" content="来自于各路大神1.滑动窗口leetcode样板题定义一个大小固定的窗口让后再处理 123456int windowSize;for (int i = 0; i + windowSize - 1 &amp;lt; s.length(); i++) &amp;#123;        String ten = s.substring(i, i + windowSize);        if (what?)">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-03T13:04:36.966Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="王子瑜的不正经日常">
+<meta name="twitter:title" content="字符串的模板">
+<meta name="twitter:description" content="来自于各路大神1.滑动窗口leetcode样板题定义一个大小固定的窗口让后再处理 123456int windowSize;for (int i = 0; i + windowSize - 1 &amp;lt; s.length(); i++) &amp;#123;        String ten = s.substring(i, i + windowSize);        if (what?)">
   
     <link rel="alternate" href="/atom.xml" title="王子瑜的不正经日常" type="application/atom+xml">
   
@@ -88,15 +92,13 @@
   </div>
 </header>
       <div id="middlecontent" title class="global-width sidebar-[object Object]">
-        <section id="main">
-  
-    <article id="post-符串的模板" class="article global-container article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-符串的模板" class="article global-container article-type-post" itemscope itemprop="blogPost">
   
     <header class="article-header">
       
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/03/符串的模板/">字符串的模板</a>
+    <h1 class="article-title" itemprop="name">
+      字符串的模板
     </h1>
   
 
@@ -109,6 +111,10 @@
     
     
   </div>
+  
+    <span id="busuanzi_container_page_pv">
+      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
   
 
   <div class="article-inner">
@@ -123,440 +129,49 @@
       
     </div>
     
+      <footer class="article-footer">
+        完
+      </footer>
+    
   </div>
+  
+    
+<nav id="article-nav">
+  <div class="article-nav-block">
+    
+  </div>
+  <div class="article-nav-block">
+    
+      <a href="/2019/10/02/eetcode174地下城游戏/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">leetcode174地下城游戏</div>
+        <strong class="article-nav-caption"></strong>
+      </a>
+    
+  </div>
+</nav>
+
+    
+<div id="gitalkContainer"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+  clientID: 'e9dc742df01536e88e12',
+        clientSecret: 'ae9c7c98d422233c89a182200df7306f37ee90a1',
+        id: md5(location.pathname),
+        repo: 'pilipili520.github.io',
+        owner: 'pilipili520',
+        admin: ['pilipili520'],
+		distractionFreeMode: false
+})
+gitalk.render('gitalkContainer')
+</script>
+
+
   
   
 </article>
-
-  
-    <article id="post-eetcode174地下城游戏" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/02/eetcode174地下城游戏/">leetcode174地下城游戏</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2019/10/02/eetcode174地下城游戏/" class="article-date">
-  <time datetime="2019-10-02T00:50:25.000Z" itemprop="datePublished">2019-10-02</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/leetcode/">leetcode</a>
-  </div>
-
-    
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dp/">dp</a></li></ul>
-
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>一些恶魔抓住了公主（P）并将她关在了地下城的右下角。地下城是由 M x N 个房间组成的二维网格。我们英勇的骑士（K）最初被安置在左上角的房间里，他必须穿过地下城并通过对抗恶魔来拯救公主。<br>骑士的初始健康点数为一个正整数。如果他的健康点数在某一时刻降至 0 或以下，他会立即死亡。<br>有些房间由恶魔守卫，因此骑士在进入这些房间时会失去健康点数（若房间里的值为负整数，则表示骑士将损失健康点数）；其他房间要么是空的（房间里的值为 0），要么包含增加骑士健康点数的魔法球（若房间里的值为正整数，则表示骑士将增加健康点数）。<br>为了尽快到达公主，骑士决定每次只向右或向下移动一步。<br>编写一个函数来计算确保骑士能够拯救到公主所需的最低初始健康点数。</p>
-        
-          <p class="article-more-link">
-            <a href="/2019/10/02/eetcode174地下城游戏/#more">阅读全文</a>
-          </p>
-        
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-xo中插入自己做的静态网页" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/30/xo中插入自己做的静态网页/">hexo中插入自己做的静态网页</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2019/09/30/xo中插入自己做的静态网页/" class="article-date">
-  <time datetime="2019-09-30T03:13:23.000Z" itemprop="datePublished">2019-09-30</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/web前端/">web前端</a>
-  </div>
-
-    
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo美化/">hexo美化</a></li></ul>
-
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <h3 id="hexo中插入自己做的静态网页和侧栏"><a href="#hexo中插入自己做的静态网页和侧栏" class="headerlink" title="hexo中插入自己做的静态网页和侧栏"></a>hexo中插入自己做的静态网页和侧栏</h3><p>虽然可以用coding啊，github的page服务但是，那些长长的，还带有广告意味的域名，怎么都不爽，所以我开了一个在博客上开了一个栏目专门就放自己的作品啥的，奈何本物联网工程师，没有啥前端的基础，只得自己瞎搜，终于可以了：<br>这个也对不同的主题而言，不过都是相似的套路我的主题是比较小众的antiquity  </p>
-        
-          <p class="article-more-link">
-            <a href="/2019/09/30/xo中插入自己做的静态网页/#more">阅读全文</a>
-          </p>
-        
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-xo看板娘高级版换装-说话" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/30/xo看板娘高级版换装-说话/">hexo看板娘高级版换装+说话</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2019/09/30/xo看板娘高级版换装-说话/" class="article-date">
-  <time datetime="2019-09-30T02:55:41.000Z" itemprop="datePublished">2019-09-30</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/web前端/">web前端</a>
-  </div>
-
-    
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo美化/">hexo美化</a></li></ul>
-
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <h2 id="我只想哭，我的waifu终于可以用了"><a href="#我只想哭，我的waifu终于可以用了" class="headerlink" title="我只想哭，我的waifu终于可以用了"></a>我只想哭，我的waifu终于可以用了</h2><p>看到别人那些可爱的看板娘我只用live2d官方的那些感觉不是很开心，不能换衣服<del>不能调戏</del>，所以真是各种百度，各种失败，各种不成，就是传统的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">做法：写得很清楚了，改变autoload.js中的路径，autoload.js中的注释写得很清楚，但是关于路径问题并没有写清除，这里的绝对地址指的是将资源打包放到  hexo/theme/next/source中，这里的hexo/theme/next/source也就是根目录（/），修改路径的时候假如把css，js，等文件放在了source 中的live目录下，那么修改路径就是/live/xxx.js</span><br></pre></td></tr></table></figure>
-        
-          <p class="article-more-link">
-            <a href="/2019/09/30/xo看板娘高级版换装-说话/#more">阅读全文</a>
-          </p>
-        
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-eetcode179最大数" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/30/eetcode179最大数/">leetcode179最大数</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2019/09/30/eetcode179最大数/" class="article-date">
-  <time datetime="2019-09-30T02:16:05.000Z" itemprop="datePublished">2019-09-30</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/leetcode/">leetcode</a>
-  </div>
-
-    
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/排序/">排序</a></li></ul>
-
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>给定一组非负整数，重新排列它们的顺序使之组成一个最大的整数。  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">示例 1:</span><br><span class="line"></span><br><span class="line">输入: [10,2]</span><br><span class="line">输出: 210</span><br><span class="line"></span><br><span class="line">示例 2:</span><br><span class="line"></span><br><span class="line">输入: [3,30,34,5,9]</span><br><span class="line">输出: 9534330</span><br></pre></td></tr></table></figure>
-
-<p>说明: 输出结果可能非常大，所以你需要返回一个字符串而不是整数。<br>题目链接<a href="https://leetcode-cn.com/problems/largest-number/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/largest-number/</a></p>
-        
-          <p class="article-more-link">
-            <a href="/2019/09/30/eetcode179最大数/#more">阅读全文</a>
-          </p>
-        
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-一下如何上传项目到coding" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/27/一下如何上传项目到coding/">记录一下如何上传项目到coding</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2019/09/27/一下如何上传项目到coding/" class="article-date">
-  <time datetime="2019-09-27T08:05:59.000Z" itemprop="datePublished">2019-09-27</time>
-</a>
-    
-    
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <p>首次新建项目<br>在项目的根目录下:</p>
-<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></div>
-
-<p>git的初始化</p>
-<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git add . （本目录下的全部文件）或者 git add &lt;filename&gt;（只有filename文件）</span><br><span class="line">git commit –m <span class="string">"项目描述"</span></span><br><span class="line">//coding其实和github一个套路的</span><br><span class="line">git remote add origin https:// git.coding.net/用户名/项目名.git</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure></div>
-
-<p>更新项目</p>
-<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line">git add . </span><br><span class="line">git commit -m <span class="string">"配置较全的更新"</span></span><br><span class="line">git push origin master <span class="comment"># 将本地主分支推到远程主分支</span></span><br></pre></td></tr></table></figure></div>
-
-<p>注意github和coding不能用同一个文件夹，我这个会报错。</p>
-
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-etcode164最大间距" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/22/etcode164最大间距/">leetcode164最大间距官方题解理解</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2019/09/22/etcode164最大间距/" class="article-date">
-  <time datetime="2019-09-22T02:00:22.000Z" itemprop="datePublished">2019-09-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/leetcode/">leetcode</a>
-  </div>
-
-    
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/排序/">排序</a></li></ul>
-
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <p>给定一个无序的数组，找出数组在排序之后，相邻元素之间最大的差值。</p>
-<p>如果数组元素个数小于 2，则返回 0。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">示例 1:</span><br><span class="line">输入: [3,6,9,1]</span><br><span class="line">输出: 3</span><br><span class="line">解释: 排序后的数组是 [1,3,6,9], 其中相邻元素 (3,6) 和 (6,9) 之间都存在最大差值 3。</span><br><span class="line"></span><br><span class="line">示例 2:</span><br><span class="line">输入: [10]</span><br><span class="line">输出: 0</span><br><span class="line">解释: 数组元素个数小于 2，因此返回 0。</span><br></pre></td></tr></table></figure>
-
-<p>说明:<br><font color="ff0000">你可以假设数组中所有元素都是非负整数，且数值在 32 位有符号整数范围内。<br>请尝试在线性时间复杂度和空间复杂度的条件下解决此问题。</font>  </p>
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/maximum-gap" target="_blank" rel="noopener">https://leetcode-cn.com/problems/maximum-gap</a></p>
-        
-          <p class="article-more-link">
-            <a href="/2019/09/22/etcode164最大间距/#more">阅读全文</a>
-          </p>
-        
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-小的感悟吧" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/21/小的感悟吧/">论物联网下的全栈工程师</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2019/09/21/小的感悟吧/" class="article-date">
-  <time datetime="2019-09-21T00:50:55.000Z" itemprop="datePublished">2019-09-21</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/感悟/">感悟</a>
-  </div>
-
-    
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/职业/">职业</a></li></ul>
-
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <p>&#160; &#160; &#160; &#160;<br>这几天沉迷五颜六色的前端，现在冷静下来了，我开始思考，我的这些东西能给人们带来什么，爸爸当时说过的一段话和我在知乎上看到的一个大佬的回答，以及以前我自己写的一些靠想象得出来的项目，一个我想要的东西，灵感突然进入了我的脑子。<br>&#160; &#160; &#160; &#160;<br>爸爸看我在百度东西，就说“你不要老用别人的，要自己创造点东西让别人看，我同事老看抖音，哈哈笑，但是他从来不自己录，我们要多创造东西，让别人看”爸爸的思想一直很前卫，很向上，他还在鼓励我自己创业。  </p>
-        
-          <p class="article-more-link">
-            <a href="/2019/09/21/小的感悟吧/#more">阅读全文</a>
-          </p>
-        
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-常见寄存器的使用" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/20/常见寄存器的使用/">各种常见寄存器的使用</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2019/09/20/常见寄存器的使用/" class="article-date">
-  <time datetime="2019-09-20T07:42:01.000Z" itemprop="datePublished">2019-09-20</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/计算机组成原理/">计算机组成原理</a>
-  </div>
-
-    
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/寄存器/">寄存器</a></li></ul>
-
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <p>x86体系的一些寄存器<br>4个通用寄存器：<br>AX,BX,CX,DX是16bits的<br>用于存储堆栈指针的寄存器是esp<br>在讲CPU架构时经常提到的program counter是指用于保存下一条指令的地址寄存器，在x86中具体是eip<br>可执行程序的程序段，数据段，堆栈段等，这三个段的地址分别在CS,DS,SS,中存储</p>
-
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-etcode184部门工资最高的员工" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/20/etcode184部门工资最高的员工/">leetcode184部门工资最高的员工</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2019/09/20/etcode184部门工资最高的员工/" class="article-date">
-  <time datetime="2019-09-19T23:36:58.000Z" itemprop="datePublished">2019-09-20</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/leetcode/">leetcode</a>
-  </div>
-
-    
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li></ul>
-
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">Employee 表包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id。</span><br><span class="line"></span><br><span class="line">+----+-------+--------+--------------+</span><br><span class="line">| Id | Name  | Salary | DepartmentId |</span><br><span class="line">+----+-------+--------+--------------+</span><br><span class="line">| 1  | Joe   | 70000  | 1            |</span><br><span class="line">| 2  | Henry | 80000  | 2            |</span><br><span class="line">| 3  | Sam   | 60000  | 2            |</span><br><span class="line">| 4  | Max   | 90000  | 1            |</span><br><span class="line">+----+-------+--------+--------------+</span><br><span class="line"></span><br><span class="line">Department 表包含公司所有部门的信息。</span><br><span class="line"></span><br><span class="line">+----+----------+</span><br><span class="line">| Id | Name     |</span><br><span class="line">+----+----------+</span><br><span class="line">| 1  | IT       |</span><br><span class="line">| 2  | Sales    |</span><br><span class="line">+----+----------+</span><br><span class="line"></span><br><span class="line">编写一个 SQL 查询，找出每个部门工资最高的员工。例如，根据上述给定的表格，Max 在 IT 部门有最高工资，Henry 在 Sales 部门有最高工资。</span><br><span class="line"></span><br><span class="line">+------------+----------+--------+</span><br><span class="line">| Department | Employee | Salary |</span><br><span class="line">+------------+----------+--------+</span><br><span class="line">| IT         | Max      | 90000  |</span><br><span class="line">| Sales      | Henry    | 80000  |</span><br><span class="line">+------------+----------+--------+</span><br></pre></td></tr></table></figure>
-
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/department-highest-salary" target="_blank" rel="noopener">https://leetcode-cn.com/problems/department-highest-salary</a></p>
-        
-          <p class="article-more-link">
-            <a href="/2019/09/20/etcode184部门工资最高的员工/#more">阅读全文</a>
-          </p>
-        
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-  </nav>
-
-
 </section>
         <aside id="sidebar">
   
