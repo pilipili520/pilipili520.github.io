@@ -90,6 +90,52 @@
       <div id="middlecontent" title class="global-width sidebar-[object Object]">
         <section id="main">
   
+    <article id="post-摇算法" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/04/摇算法/">手摇算法</a>
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2019/10/04/摇算法/" class="article-date">
+  <time datetime="2019-10-04T01:47:52.000Z" itemprop="datePublished">2019-10-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/算法/">算法</a>
+  </div>
+
+    
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/字符串翻转/">字符串翻转</a></li></ul>
+
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <p>今天是做了一个easy题但是我死活都过不了，气死了，但是感觉这个像是归并排序的所占空间的O(1)的那个优化算法，叫手摇算法，学名-内存反转算法  </p>
+        
+          <p class="article-more-link">
+            <a href="/2019/10/04/摇算法/#more">阅读全文</a>
+          </p>
+        
+      
+    </div>
+    
+  </div>
+  
+  
+</article>
+
+  
     <article id="post-符串的模板" class="article global-container article-type-post" itemscope itemprop="blogPost">
   
     <header class="article-header">
@@ -107,7 +153,13 @@
   <time datetime="2019-10-03T12:48:33.000Z" itemprop="datePublished">2019-10-03</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/算法/">算法</a>
+  </div>
+
     
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/字符串处理/">字符串处理</a></li></ul>
+
   </div>
   
 
@@ -115,11 +167,12 @@
     
     <div class="article-content article-content-cloud" itemprop="articleBody">
       
-        <h2 id="来自于各路大神"><a href="#来自于各路大神" class="headerlink" title="来自于各路大神"></a>来自于各路大神</h2><p><strong>1.滑动窗口</strong><br><a href="https://leetcode-cn.com/problems/repeated-dna-sequences/" target="_blank" rel="noopener">leetcode样板题</a><br>定义一个大小固定的窗口让后再处理</p>
-<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> windowSize;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i + windowSize - <span class="number">1</span> &lt; s.length(); i++) &#123;</span><br><span class="line">        String ten = s.substring(i, i + windowSize);</span><br><span class="line">        <span class="keyword">if</span> (what?)</span><br><span class="line">            then;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>下面是一个巨佬的，我就记录一下，找不到是哪个题了  </p>
-<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line">I will first give the solution then show you the magic template.</span><br><span class="line"></span><br><span class="line">The code of solving <span class="keyword">this</span> problem is below. It might be the shortest among all solutions provided in Discuss.</span><br><span class="line"></span><br><span class="line"><span class="function">string <span class="title">minWindow</span><span class="params">(string s, string t)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">map</span><span class="params">(<span class="number">128</span>,<span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="keyword">for</span>(auto c: t) map[c]++;<span class="comment">//这句好机智</span></span><br><span class="line">        <span class="keyword">int</span> counter=t.size(), begin=<span class="number">0</span>, end=<span class="number">0</span>, d=INT_MAX, head=<span class="number">0</span>;</span><br><span class="line">		<span class="comment">//counter是所需要找的t中的字母的个数</span></span><br><span class="line">        <span class="keyword">while</span>(end&lt;s.size())&#123;</span><br><span class="line">			<span class="comment">//end走过的begin也会走过,当是t中没有s中有的字母的时候相应的map会变成负数</span></span><br><span class="line">            <span class="keyword">if</span>(map[s[end++]]--&gt;<span class="number">0</span>) counter--; <span class="comment">//end自增一，对应的字母频率减一，所需数减一,窗口右移，t中的在s中的字母,对于t来说顺序无所谓</span></span><br><span class="line">            <span class="keyword">while</span>(counter==<span class="number">0</span>)&#123; <span class="comment">//valid，t里的字母s中都有的时候，不过不是按照顺序查的</span></span><br><span class="line">                <span class="keyword">if</span>(end-begin&lt;d)  d=end-(head=begin);<span class="comment">//这里是的d是窗口大小,head是我们字符串的头，当窗口大小变小的时候更新</span></span><br><span class="line">				<span class="comment">//因为包含t是不需要顺序的所以在begin~end中只要有全部t中的字母即可,begin经过的字母就是所需要的，所以是counter++,</span></span><br><span class="line">                <span class="keyword">if</span>(map[s[begin++]]++==<span class="number">0</span>) counter++;  <span class="comment">//make it invalid窗口左边界右移,当某个字母是自然减掉的零（在t中）</span></span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> d==INT_MAX? <span class="string">""</span>:s.substr(head, d);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">Here comes the template.</span><br><span class="line"></span><br><span class="line">For most substring problem, we are given a string and need to find a substring of it which satisfy some restrictions. A general way is to use a hashmap assisted with two pointers. The template is given below.</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findSubstring</span><span class="params">(string s)</span></span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">map</span><span class="params">(<span class="number">128</span>,<span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="keyword">int</span> counter; <span class="comment">// check whether the substring is valid</span></span><br><span class="line">        <span class="keyword">int</span> begin=<span class="number">0</span>, end=<span class="number">0</span>; <span class="comment">//two pointers, one point to tail and one  head</span></span><br><span class="line">        <span class="keyword">int</span> d; <span class="comment">//the length of substring</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>() &#123; <span class="comment">/* initialize the hash map here */</span> &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(end&lt;s.size())&#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>(map[s[end++]]-- ?)&#123;  <span class="comment">/* modify counter here */</span> &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">while</span>(<span class="comment">/* counter condition */</span>)&#123; </span><br><span class="line">                 </span><br><span class="line">                 <span class="comment">/* update d here if finding minimum*/</span></span><br><span class="line"></span><br><span class="line">                <span class="comment">//increase begin to make it invalid/valid again</span></span><br><span class="line">                </span><br><span class="line">                <span class="keyword">if</span>(map[s[begin++]]++ ?)&#123; <span class="comment">/*modify counter here*/</span> &#125;</span><br><span class="line">            &#125;  </span><br><span class="line"></span><br><span class="line">            <span class="comment">/* update d here if finding maximum*/</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> d;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">One thing needs to be mentioned is that when asked to find maximum substring, we should update maximum after the inner <span class="keyword">while</span> loop to guarantee that the substring is valid. On the other hand, when asked to find minimum substring, we should update minimum inside the inner <span class="keyword">while</span> loop.</span><br><span class="line"></span><br><span class="line">The code of solving Longest Substring with At Most Two Distinct Characters is below:</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">lengthOfLongestSubstringTwoDistinct</span><span class="params">(string s)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">map</span><span class="params">(<span class="number">128</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="keyword">int</span> counter=<span class="number">0</span>, begin=<span class="number">0</span>, end=<span class="number">0</span>, d=<span class="number">0</span>; </span><br><span class="line">        <span class="keyword">while</span>(end&lt;s.size())&#123;</span><br><span class="line">            <span class="keyword">if</span>(map[s[end++]]++==<span class="number">0</span>) counter++;</span><br><span class="line">            <span class="keyword">while</span>(counter&gt;<span class="number">2</span>) <span class="keyword">if</span>(map[s[begin++]]--==<span class="number">1</span>) counter--;</span><br><span class="line">            d=max(d, end-begin);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> d;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">The code of solving Longest Substring Without Repeating Characters is below:</span><br><span class="line"></span><br><span class="line">Update <span class="number">01.04</span>.2016, thanks <span class="meta">@weiyi</span>3 <span class="keyword">for</span> advise.</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(string s)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">map</span><span class="params">(<span class="number">128</span>,<span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="keyword">int</span> counter=<span class="number">0</span>, begin=<span class="number">0</span>, end=<span class="number">0</span>, d=<span class="number">0</span>; </span><br><span class="line">        <span class="keyword">while</span>(end&lt;s.size())&#123;</span><br><span class="line">            <span class="keyword">if</span>(map[s[end++]]++&gt;<span class="number">0</span>) counter++; </span><br><span class="line">            <span class="keyword">while</span>(counter&gt;<span class="number">0</span>) <span class="keyword">if</span>(map[s[begin++]]--&gt;<span class="number">1</span>) counter--;</span><br><span class="line">            d=max(d, end-begin); <span class="comment">//while valid, update d</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> d;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">I think <span class="keyword">this</span> post deserves some upvotes! : )</span><br></pre></td></tr></table></figure></div>
+        <h2 id="来自于各路大神"><a href="#来自于各路大神" class="headerlink" title="来自于各路大神"></a>来自于各路大神</h2><p><strong>1.滑动窗口</strong><br><a href="https://leetcode-cn.com/problems/repeated-dna-sequences/" target="_blank" rel="noopener">leetcode样板题</a> </p>
+        
+          <p class="article-more-link">
+            <a href="/2019/10/03/符串的模板/#more">阅读全文</a>
+          </p>
+        
       
     </div>
     
@@ -501,54 +554,6 @@
 </article>
 
   
-    <article id="post-etcode184部门工资最高的员工" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/20/etcode184部门工资最高的员工/">leetcode184部门工资最高的员工</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2019/09/20/etcode184部门工资最高的员工/" class="article-date">
-  <time datetime="2019-09-19T23:36:58.000Z" itemprop="datePublished">2019-09-20</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/leetcode/">leetcode</a>
-  </div>
-
-    
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li></ul>
-
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">Employee 表包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id。</span><br><span class="line"></span><br><span class="line">+----+-------+--------+--------------+</span><br><span class="line">| Id | Name  | Salary | DepartmentId |</span><br><span class="line">+----+-------+--------+--------------+</span><br><span class="line">| 1  | Joe   | 70000  | 1            |</span><br><span class="line">| 2  | Henry | 80000  | 2            |</span><br><span class="line">| 3  | Sam   | 60000  | 2            |</span><br><span class="line">| 4  | Max   | 90000  | 1            |</span><br><span class="line">+----+-------+--------+--------------+</span><br><span class="line"></span><br><span class="line">Department 表包含公司所有部门的信息。</span><br><span class="line"></span><br><span class="line">+----+----------+</span><br><span class="line">| Id | Name     |</span><br><span class="line">+----+----------+</span><br><span class="line">| 1  | IT       |</span><br><span class="line">| 2  | Sales    |</span><br><span class="line">+----+----------+</span><br><span class="line"></span><br><span class="line">编写一个 SQL 查询，找出每个部门工资最高的员工。例如，根据上述给定的表格，Max 在 IT 部门有最高工资，Henry 在 Sales 部门有最高工资。</span><br><span class="line"></span><br><span class="line">+------------+----------+--------+</span><br><span class="line">| Department | Employee | Salary |</span><br><span class="line">+------------+----------+--------+</span><br><span class="line">| IT         | Max      | 90000  |</span><br><span class="line">| Sales      | Henry    | 80000  |</span><br><span class="line">+------------+----------+--------+</span><br></pre></td></tr></table></figure>
-
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/department-highest-salary" target="_blank" rel="noopener">https://leetcode-cn.com/problems/department-highest-salary</a></p>
-        
-          <p class="article-more-link">
-            <a href="/2019/09/20/etcode184部门工资最高的员工/#more">阅读全文</a>
-          </p>
-        
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
 
 
   <nav id="page-nav">
@@ -715,7 +720,7 @@ jQuery.rnd = function(m,n) {
   <div class="widget-box">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C/">C++</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/leetcode/">leetcode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/web前端/">web前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/感悟/">感悟</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/计算机组成原理/">计算机组成原理</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/讲座/">讲座</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C/">C++</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/leetcode/">leetcode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/web前端/">web前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/感悟/">感悟</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/算法/">算法</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/计算机组成原理/">计算机组成原理</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/讲座/">讲座</a></li></ul>
     </div>
   </div>
 
@@ -725,7 +730,7 @@ jQuery.rnd = function(m,n) {
   <div class="widget-box">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/">MySQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dp/">dp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo搭建/">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo美化/">hexo美化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string类/">string类</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/寄存器/">寄存器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/排序/">排序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生物计算机/">生物计算机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/职业/">职业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/语法/">语法</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/">MySQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dp/">dp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo搭建/">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo美化/">hexo美化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string类/">string类</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符串处理/">字符串处理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符串翻转/">字符串翻转</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/寄存器/">寄存器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/排序/">排序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生物计算机/">生物计算机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/职业/">职业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/语法/">语法</a></li></ul>
     </div>
   </div>
 
@@ -747,6 +752,10 @@ jQuery.rnd = function(m,n) {
       <ul>
         
           <li>
+            <a href="/2019/10/04/摇算法/">手摇算法</a>
+          </li>
+        
+          <li>
             <a href="/2019/10/03/符串的模板/">字符串的模板</a>
           </li>
         
@@ -760,10 +769,6 @@ jQuery.rnd = function(m,n) {
         
           <li>
             <a href="/2019/09/30/xo看板娘高级版换装-说话/">hexo看板娘高级版换装+说话</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/30/eetcode179最大数/">leetcode179最大数</a>
           </li>
         
       </ul>
