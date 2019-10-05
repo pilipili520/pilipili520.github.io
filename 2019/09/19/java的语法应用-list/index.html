@@ -20,7 +20,7 @@
 <meta property="og:description" content="上代码吧copy自https://blog.csdn.net/qq_37935670/article/details/79567058List的应用">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://www.wangziyu666.top/images/pasted-2.png">
-<meta property="og:updated_time" content="2019-10-03T13:02:09.752Z">
+<meta property="og:updated_time" content="2019-10-05T00:40:55.237Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java的语法应用持续补充">
 <meta name="twitter:description" content="上代码吧copy自https://blog.csdn.net/qq_37935670/article/details/79567058List的应用">
@@ -137,7 +137,9 @@
 <p>ArrayList是支持下标引用的  </p>
 <div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//初始化一个List</span></span><br><span class="line"><span class="keyword">new</span> ArrayList(括号里的可以,List,Set等);</span><br></pre></td></tr></table></figure></div>
 
-<p><strong>字符串的一些</strong></p>
+<p><strong>字符串的一些</strong><br>子串提取</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String greeting = <span class="string">"hello"</span>;</span><br><span class="line">String s = greeting.substring(<span class="number">0</span>,<span class="number">3</span>);<span class="comment">//"hel"[开始，结束)</span></span><br></pre></td></tr></table></figure></div>
+
 <div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">String oneTextValue = <span class="string">"1223)234"</span>;</span><br><span class="line">String[] chunks = oneTextValue.split(<span class="string">"\\)"</span>);</span><br><span class="line"></span><br><span class="line">String oneTextValue2 = <span class="string">"1223)234)"</span>;</span><br><span class="line">String[] chunks2 = oneTextValue2.split(<span class="string">"\\)"</span>);</span><br><span class="line"></span><br><span class="line">String oneTextValue3 = <span class="string">"1223234"</span>;</span><br><span class="line">String[] chunks3 = oneTextValue3.split(<span class="string">"\\)"</span>);</span><br><span class="line"></span><br><span class="line">String oneTextValue4 = <span class="string">")1223234"</span>;</span><br><span class="line">String[] chunks4 = oneTextValue4.split(<span class="string">"\\)"</span>);</span><br><span class="line"></span><br><span class="line">结果：</span><br></pre></td></tr></table></figure></div>
 
 <p><img src="/images/pasted-2.png" alt="结果图"><br>转自<a href="https://www.cnblogs.com/kaituorensheng/p/8032350.html" target="_blank" rel="noopener">https://www.cnblogs.com/kaituorensheng/p/8032350.html</a><br>字符串应用：<br>长度：.length<br><strong>各种类：</strong><br>Integer类：<br>Integer是一个整数对象，就像String，而int是基本数据类型(整数），所以Integer.parseint()就是把整形对象Integer转换成基本数据类型int（整数）。</p>
@@ -369,7 +371,7 @@ jQuery.rnd = function(m,n) {
   <div class="widget-box">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/">MySQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dp/">dp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo搭建/">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo美化/">hexo美化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string类/">string类</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符串处理/">字符串处理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符串翻转/">字符串翻转</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/寄存器/">寄存器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/排序/">排序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生物计算机/">生物计算机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/职业/">职业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/语法/">语法</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/">MySQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dp/">dp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo搭建/">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo美化/">hexo美化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string类/">string类</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/位运算/">位运算</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符串处理/">字符串处理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符串翻转/">字符串翻转</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/寄存器/">寄存器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/排序/">排序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生物计算机/">生物计算机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/职业/">职业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/语法/">语法</a></li></ul>
     </div>
   </div>
 
@@ -391,6 +393,10 @@ jQuery.rnd = function(m,n) {
       <ul>
         
           <li>
+            <a href="/2019/10/05/种位运算/">各种位运算</a>
+          </li>
+        
+          <li>
             <a href="/2019/10/04/摇算法/">手摇算法</a>
           </li>
         
@@ -404,10 +410,6 @@ jQuery.rnd = function(m,n) {
         
           <li>
             <a href="/2019/09/30/xo中插入自己做的静态网页/">hexo中插入自己做的静态网页</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/30/xo看板娘高级版换装-说话/">hexo看板娘高级版换装+说话</a>
           </li>
         
       </ul>

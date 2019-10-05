@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>王子瑜的不正经日常</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://www.wangziyu666.top/"/>
+  <updated>2019-10-05T02:10:58.062Z</updated>
+  <id>https://www.wangziyu666.top/</id>
+  
+  <author>
+    <name>王子瑜</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>各种位运算</title>
+    <link href="https://www.wangziyu666.top/2019/10/05/%E7%A7%8D%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    <id>https://www.wangziyu666.top/2019/10/05/种位运算/</id>
+    <published>2019-10-05T01:18:00.000Z</published>
+    <updated>2019-10-05T02:10:58.062Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;总结一下各种位运算&quot;&gt;&lt;a href=&quot;#总结一下各种位运算&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://www.wangziyu666.top/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="位运算" scheme="https://www.wangziyu666.top/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手摇算法</title>
+    <link href="https://www.wangziyu666.top/2019/10/04/%E6%91%87%E7%AE%97%E6%B3%95/"/>
+    <id>https://www.wangziyu666.top/2019/10/04/摇算法/</id>
+    <published>2019-10-04T01:47:52.000Z</published>
+    <updated>2019-10-04T02:20:22.242Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天是做了一个easy题但是我死活都过不了，气死了，但是感觉这个像是归并排序的所占空间的O(1)的那个优化算法，叫手摇算法，学名-内存反转算法  &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://www.wangziyu666.top/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="字符串翻转" scheme="https://www.wangziyu666.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BF%BB%E8%BD%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字符串的模板</title>
+    <link href="https://www.wangziyu666.top/2019/10/03/%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%A8%A1%E6%9D%BF/"/>
+    <id>https://www.wangziyu666.top/2019/10/03/符串的模板/</id>
+    <published>2019-10-03T12:48:33.000Z</published>
+    <updated>2019-10-04T02:20:50.171Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;来自于各路大神&quot;&gt;&lt;a href=&quot;#来自于各路大神&quot; class=&quot;headerlink&quot; title=&quot;来自于各路大神&quot;&gt;&lt;/a&gt;来自于各路大神&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;1.滑动窗口&lt;/strong&gt;&lt;br&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/repeated-dna-sequences/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;leetcode样板题&lt;/a&gt; &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://www.wangziyu666.top/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="字符串处理" scheme="https://www.wangziyu666.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode174地下城游戏</title>
+    <link href="https://www.wangziyu666.top/2019/10/02/eetcode174%E5%9C%B0%E4%B8%8B%E5%9F%8E%E6%B8%B8%E6%88%8F/"/>
+    <id>https://www.wangziyu666.top/2019/10/02/eetcode174地下城游戏/</id>
+    <published>2019-10-02T00:50:25.000Z</published>
+    <updated>2019-10-02T01:15:11.571Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h2&gt;&lt;p&gt;一些恶魔抓住了公主（P）并将她关在了地下城的右下角。地下城是由 M x N 个房间组成的二维网格。我们英勇的骑士（K）最初被安置在左上角的房间里，他必须穿过地下城并通过对抗恶魔来拯救公主。&lt;br&gt;骑士的初始健康点数为一个正整数。如果他的健康点数在某一时刻降至 0 或以下，他会立即死亡。&lt;br&gt;有些房间由恶魔守卫，因此骑士在进入这些房间时会失去健康点数（若房间里的值为负整数，则表示骑士将损失健康点数）；其他房间要么是空的（房间里的值为 0），要么包含增加骑士健康点数的魔法球（若房间里的值为正整数，则表示骑士将增加健康点数）。&lt;br&gt;为了尽快到达公主，骑士决定每次只向右或向下移动一步。&lt;br&gt;编写一个函数来计算确保骑士能够拯救到公主所需的最低初始健康点数。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://www.wangziyu666.top/categories/leetcode/"/>
+    
+    
+      <category term="dp" scheme="https://www.wangziyu666.top/tags/dp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo中插入自己做的静态网页</title>
+    <link href="https://www.wangziyu666.top/2019/09/30/xo%E4%B8%AD%E6%8F%92%E5%85%A5%E8%87%AA%E5%B7%B1%E5%81%9A%E7%9A%84%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5/"/>
+    <id>https://www.wangziyu666.top/2019/09/30/xo中插入自己做的静态网页/</id>
+    <published>2019-09-30T03:13:23.000Z</published>
+    <updated>2019-09-30T03:38:31.797Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;hexo中插入自己做的静态网页和侧栏&quot;&gt;&lt;a href=&quot;#hexo中插入自己做的静态网页和侧栏&quot; class=&quot;headerlink&quot; title=&quot;hexo中插入自己做的静态网页和侧栏&quot;&gt;&lt;/a&gt;hexo中插入自己做的静态网页和侧栏&lt;/h3&gt;&lt;p&gt;虽然可以用coding啊，github的page服务但是，那些长长的，还带有广告意味的域名，怎么都不爽，所以我开了一个在博客上开了一个栏目专门就放自己的作品啥的，奈何本物联网工程师，没有啥前端的基础，只得自己瞎搜，终于可以了：&lt;br&gt;这个也对不同的主题而言，不过都是相似的套路我的主题是比较小众的antiquity  &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="web前端" scheme="https://www.wangziyu666.top/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="hexo美化" scheme="https://www.wangziyu666.top/tags/hexo%E7%BE%8E%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo看板娘高级版换装+说话</title>
+    <link href="https://www.wangziyu666.top/2019/09/30/xo%E7%9C%8B%E6%9D%BF%E5%A8%98%E9%AB%98%E7%BA%A7%E7%89%88%E6%8D%A2%E8%A3%85-%E8%AF%B4%E8%AF%9D/"/>
+    <id>https://www.wangziyu666.top/2019/09/30/xo看板娘高级版换装-说话/</id>
+    <published>2019-09-30T02:55:41.000Z</published>
+    <updated>2019-09-30T03:39:04.025Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;我只想哭，我的waifu终于可以用了&quot;&gt;&lt;a href=&quot;#我只想哭，我的waifu终于可以用了&quot; class=&quot;headerlink&quot; title=&quot;我只想哭，我的waifu终于可以用了&quot;&gt;&lt;/a&gt;我只想哭，我的waifu终于可以用了&lt;/h2&gt;&lt;p&gt;看到别人那些可爱的看板娘我只用live2d官方的那些感觉不是很开心，不能换衣服&lt;del&gt;不能调戏&lt;/del&gt;，所以真是各种百度，各种失败，各种不成，就是传统的：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;做法：写得很清楚了，改变autoload.js中的路径，autoload.js中的注释写得很清楚，但是关于路径问题并没有写清除，这里的绝对地址指的是将资源打包放到  hexo/theme/next/source中，这里的hexo/theme/next/source也就是根目录（/），修改路径的时候假如把css，js，等文件放在了source 中的live目录下，那么修改路径就是/live/xxx.js&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="web前端" scheme="https://www.wangziyu666.top/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="hexo美化" scheme="https://www.wangziyu666.top/tags/hexo%E7%BE%8E%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode179最大数</title>
+    <link href="https://www.wangziyu666.top/2019/09/30/eetcode179%E6%9C%80%E5%A4%A7%E6%95%B0/"/>
+    <id>https://www.wangziyu666.top/2019/09/30/eetcode179最大数/</id>
+    <published>2019-09-30T02:16:05.000Z</published>
+    <updated>2019-09-30T02:26:58.414Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h2&gt;&lt;p&gt;给定一组非负整数，重新排列它们的顺序使之组成一个最大的整数。  &lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;示例 1:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输入: [10,2]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输出: 210&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;示例 2:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输入: [3,30,34,5,9]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输出: 9534330&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;说明: 输出结果可能非常大，所以你需要返回一个字符串而不是整数。&lt;br&gt;题目链接&lt;a href=&quot;https://leetcode-cn.com/problems/largest-number/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode-cn.com/problems/largest-number/&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://www.wangziyu666.top/categories/leetcode/"/>
+    
+    
+      <category term="排序" scheme="https://www.wangziyu666.top/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记录一下如何上传项目到coding</title>
+    <link href="https://www.wangziyu666.top/2019/09/27/%E4%B8%80%E4%B8%8B%E5%A6%82%E4%BD%95%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE%E5%88%B0coding/"/>
+    <id>https://www.wangziyu666.top/2019/09/27/一下如何上传项目到coding/</id>
+    <published>2019-09-27T08:05:59.000Z</published>
+    <updated>2019-09-27T08:32:46.270Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;首次新建项目&lt;br&gt;在项目的根目录下:&lt;/p&gt;
+&lt;div class=&quot;highlight-box&quot;autocomplete=&quot;off&quot; autocorrect=&quot;off&quot; autocapitalize=&quot;off&quot; spellcheck=&quot;false&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode164最大间距官方题解理解</title>
+    <link href="https://www.wangziyu666.top/2019/09/22/etcode164%E6%9C%80%E5%A4%A7%E9%97%B4%E8%B7%9D/"/>
+    <id>https://www.wangziyu666.top/2019/09/22/etcode164最大间距/</id>
+    <published>2019-09-22T02:00:22.000Z</published>
+    <updated>2019-09-23T04:48:52.235Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;给定一个无序的数组，找出数组在排序之后，相邻元素之间最大的差值。&lt;/p&gt;
+&lt;p&gt;如果数组元素个数小于 2，则返回 0。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;示例 1:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输入: [3,6,9,1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输出: 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;解释: 排序后的数组是 [1,3,6,9], 其中相邻元素 (3,6) 和 (6,9) 之间都存在最大差值 3。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;示例 2:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输入: [10]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输出: 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;解释: 数组元素个数小于 2，因此返回 0。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;说明:&lt;br&gt;&lt;font color=&quot;ff0000&quot;&gt;你可以假设数组中所有元素都是非负整数，且数值在 32 位有符号整数范围内。&lt;br&gt;请尝试在线性时间复杂度和空间复杂度的条件下解决此问题。&lt;/font&gt;  &lt;/p&gt;
+&lt;p&gt;来源：力扣（LeetCode）&lt;br&gt;链接：&lt;a href=&quot;https://leetcode-cn.com/problems/maximum-gap&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode-cn.com/problems/maximum-gap&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://www.wangziyu666.top/categories/leetcode/"/>
+    
+    
+      <category term="排序" scheme="https://www.wangziyu666.top/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>论物联网下的全栈工程师</title>
+    <link href="https://www.wangziyu666.top/2019/09/21/%E5%B0%8F%E7%9A%84%E6%84%9F%E6%82%9F%E5%90%A7/"/>
+    <id>https://www.wangziyu666.top/2019/09/21/小的感悟吧/</id>
+    <published>2019-09-21T00:50:55.000Z</published>
+    <updated>2019-09-22T14:26:00.706Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;&lt;br&gt;这几天沉迷五颜六色的前端，现在冷静下来了，我开始思考，我的这些东西能给人们带来什么，爸爸当时说过的一段话和我在知乎上看到的一个大佬的回答，以及以前我自己写的一些靠想象得出来的项目，一个我想要的东西，灵感突然进入了我的脑子。&lt;br&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;&lt;br&gt;爸爸看我在百度东西，就说“你不要老用别人的，要自己创造点东西让别人看，我同事老看抖音，哈哈笑，但是他从来不自己录，我们要多创造东西，让别人看”爸爸的思想一直很前卫，很向上，他还在鼓励我自己创业。  &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="感悟" scheme="https://www.wangziyu666.top/categories/%E6%84%9F%E6%82%9F/"/>
+    
+    
+      <category term="职业" scheme="https://www.wangziyu666.top/tags/%E8%81%8C%E4%B8%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>各种常见寄存器的使用</title>
+    <link href="https://www.wangziyu666.top/2019/09/20/%E5%B8%B8%E8%A7%81%E5%AF%84%E5%AD%98%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://www.wangziyu666.top/2019/09/20/常见寄存器的使用/</id>
+    <published>2019-09-20T07:42:01.000Z</published>
+    <updated>2019-09-22T03:28:03.447Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;x86体系的一些寄存器&lt;br&gt;4个通用寄存器：&lt;br&gt;AX,BX,CX,DX是16bits的&lt;br&gt;用于存储堆栈指针的寄存器是esp&lt;br&gt;在讲CPU架构时经常提到的program
+        
+      
+    
+    </summary>
+    
+    
+      <category term="计算机组成原理" scheme="https://www.wangziyu666.top/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
+    
+    
+      <category term="寄存器" scheme="https://www.wangziyu666.top/tags/%E5%AF%84%E5%AD%98%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode184部门工资最高的员工</title>
+    <link href="https://www.wangziyu666.top/2019/09/20/etcode184%E9%83%A8%E9%97%A8%E5%B7%A5%E8%B5%84%E6%9C%80%E9%AB%98%E7%9A%84%E5%91%98%E5%B7%A5/"/>
+    <id>https://www.wangziyu666.top/2019/09/20/etcode184部门工资最高的员工/</id>
+    <published>2019-09-19T23:36:58.000Z</published>
+    <updated>2019-09-20T06:07:35.334Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Employee 表包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+----+-------+--------+--------------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| Id | Name  | Salary | DepartmentId |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+----+-------+--------+--------------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| 1  | Joe   | 70000  | 1            |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| 2  | Henry | 80000  | 2            |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| 3  | Sam   | 60000  | 2            |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| 4  | Max   | 90000  | 1            |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+----+-------+--------+--------------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Department 表包含公司所有部门的信息。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+----+----------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| Id | Name     |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+----+----------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| 1  | IT       |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| 2  | Sales    |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+----+----------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;编写一个 SQL 查询，找出每个部门工资最高的员工。例如，根据上述给定的表格，Max 在 IT 部门有最高工资，Henry 在 Sales 部门有最高工资。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+------------+----------+--------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| Department | Employee | Salary |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+------------+----------+--------+&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| IT         | Max      | 90000  |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| Sales      | Henry    | 80000  |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+------------+----------+--------+&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;来源：力扣（LeetCode）&lt;br&gt;链接：&lt;a href=&quot;https://leetcode-cn.com/problems/department-highest-salary&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode-cn.com/problems/department-highest-salary&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://www.wangziyu666.top/categories/leetcode/"/>
+    
+    
+      <category term="MySQL" scheme="https://www.wangziyu666.top/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java的语法应用持续补充</title>
+    <link href="https://www.wangziyu666.top/2019/09/19/java%E7%9A%84%E8%AF%AD%E6%B3%95%E5%BA%94%E7%94%A8-list/"/>
+    <id>https://www.wangziyu666.top/2019/09/19/java的语法应用-list/</id>
+    <published>2019-09-18T23:28:02.000Z</published>
+    <updated>2019-10-05T00:40:55.237Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;上代码吧&lt;br&gt;copy自&lt;a href=&quot;https://blog.csdn.net/qq_37935670/article/details/79567058&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/qq_37935670/article/details/79567058&lt;/a&gt;&lt;br&gt;&lt;strong&gt;List的应用&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="https://www.wangziyu666.top/categories/Java/"/>
+    
+    
+      <category term="语法" scheme="https://www.wangziyu666.top/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>有关生物计算机的一些感触</title>
+    <link href="https://www.wangziyu666.top/2019/09/18/%E6%9C%89%E5%85%B3%E7%94%9F%E7%89%A9%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E8%A7%A6/"/>
+    <id>https://www.wangziyu666.top/2019/09/18/有关生物计算机的一些感触/</id>
+    <published>2019-09-18T04:42:50.000Z</published>
+    <updated>2019-09-20T06:08:24.312Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;这个是我们的一个选修课&quot;&gt;&lt;a href=&quot;#这个是我们的一个选修课&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="讲座" scheme="https://www.wangziyu666.top/categories/%E8%AE%B2%E5%BA%A7/"/>
+    
+    
+      <category term="生物计算机" scheme="https://www.wangziyu666.top/tags/%E7%94%9F%E7%89%A9%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode153寻找旋转排序数组中的最小值</title>
+    <link href="https://www.wangziyu666.top/2019/09/18/leetcode153%E5%AF%BB%E6%89%BE%E6%97%8B%E8%BD%AC%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9C%80%E5%B0%8F%E5%80%BC/"/>
+    <id>https://www.wangziyu666.top/2019/09/18/leetcode153寻找旋转排序数组中的最小值/</id>
+    <published>2019-09-18T00:13:50.000Z</published>
+    <updated>2019-09-18T00:20:29.286Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h2&gt;&lt;p&gt;假设按照&lt;strong&gt;升序排序&lt;/strong&gt;的数组在预先未知的某个点上进行了旋转。&lt;/p&gt;
+&lt;p&gt;( 例如，数组 [0,1,2,4,5,6,7] 可能变为 [4,5,6,7,0,1,2] )。&lt;/p&gt;
+&lt;p&gt;请找出其中最小的元素。&lt;/p&gt;
+&lt;p&gt;你可以假设数组中不存在重复元素。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;原题链接&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>c++的string类函数怎么记不住</title>
+    <link href="https://www.wangziyu666.top/2019/09/17/c-%E7%9A%84string%E7%B1%BB%E5%87%BD%E6%95%B0%E6%80%8E%E4%B9%88%E8%AE%B0%E4%B8%8D%E4%BD%8F/"/>
+    <id>https://www.wangziyu666.top/2019/09/17/c-的string类函数怎么记不住/</id>
+    <published>2019-09-16T23:52:26.000Z</published>
+    <updated>2019-09-17T00:30:27.884Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;转自&lt;a href=&quot;https://blog.csdn.net/djt4541/article/details/82699515&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/djt4541/article/details/82699515&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="https://www.wangziyu666.top/categories/C/"/>
+    
+    
+      <category term="string类" scheme="https://www.wangziyu666.top/tags/string%E7%B1%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode146LRU缓存机制</title>
+    <link href="https://www.wangziyu666.top/2019/09/16/leetcode146LRU%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/"/>
+    <id>https://www.wangziyu666.top/2019/09/16/leetcode146LRU缓存机制/</id>
+    <published>2019-09-16T11:13:04.000Z</published>
+    <updated>2019-09-17T01:49:33.366Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;p&gt;运用你所掌握的数据结构，设计和实现一个  LRU (最近最少使用) 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。&lt;/p&gt;
+&lt;p&gt;获取数据 get(key) - 如果密钥 (key) 存在于缓存中，则获取密钥的值（总是正数），否则返回 -1。&lt;br&gt;写入数据 put(key, value) - 如果密钥不存在，则写入其数据值。当缓存容量达到上限时，它应该在写入新数据之前删除最近最少使用的数据值，从而为新的数据值留出空间。&lt;br&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/lru-cache&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;原题链接&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://www.wangziyu666.top/categories/leetcode/"/>
+    
+    
+      <category term="操作系统" scheme="https://www.wangziyu666.top/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode152乘积最大子序列</title>
+    <link href="https://www.wangziyu666.top/2019/09/15/%E7%AC%AC%E4%BA%8C%E7%AF%87/"/>
+    <id>https://www.wangziyu666.top/2019/09/15/第二篇/</id>
+    <published>2019-09-15T00:38:18.000Z</published>
+    <updated>2019-09-17T01:49:55.958Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目描述：&quot;&gt;&lt;a href=&quot;#题目描述：&quot; class=&quot;headerlink&quot; title=&quot;题目描述：&quot;&gt;&lt;/a&gt;题目描述：&lt;/h1&gt;&lt;p&gt;给定一个整数数组 nums ，找出一个序列中乘积最大的连续子序列（该序列至少包含一个数）。&lt;br&gt;示例 1：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;输入: [2,3,-2,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输出: 6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;解释: 子数组 [2,3] 有最大乘积 6。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;示例 2:  &lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;输入: [-2,0,-1]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输出: 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;解释: 结果不能为 2, 因为 [-2,-1] 不是子数组。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://www.wangziyu666.top/categories/leetcode/"/>
+    
+    
+      <category term="dp" scheme="https://www.wangziyu666.top/tags/dp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每日一题132. 分割回文串 II</title>
+    <link href="https://www.wangziyu666.top/2019/09/14/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98132-%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2-II/"/>
+    <id>https://www.wangziyu666.top/2019/09/14/每日一题132-分割回文串-II/</id>
+    <published>2019-09-14T00:09:00.000Z</published>
+    <updated>2019-09-17T01:50:09.082Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h1&gt;&lt;p&gt;给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。&lt;br&gt;返回符合要求的最少分割次数。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;输入: &amp;quot;aab&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输出: 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;解释: 进行一次分割就可将 s 分割成 [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;] 这样两个回文子串。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;这题我抱着侥幸的心里去用的dfs，果然这种二的就不能直接搜索，我就去学的大神的代码&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="https://www.wangziyu666.top/categories/leetcode/"/>
+    
+    
+      <category term="dp" scheme="https://www.wangziyu666.top/tags/dp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记录自己是如何被建立起来的</title>
+    <link href="https://www.wangziyu666.top/2019/09/13/hello-world/"/>
+    <id>https://www.wangziyu666.top/2019/09/13/hello-world/</id>
+    <published>2019-09-13T13:17:33.000Z</published>
+    <updated>2019-09-17T01:50:18.987Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;记录一下我搭建hexo-github&quot;&gt;&lt;a href=&quot;#记录一下我搭建hexo-github&quot; class=&quot;headerlink&quot; title=&quot;记录一下我搭建hexo+github&quot;&gt;&lt;/a&gt;记录一下我搭建hexo+github&lt;/h2&gt;&lt;p&gt;ps:我是windows10下玩耍的，以前我是在腾讯云里买的服务器想学javaweb的现在，自己捅咕得很开心，日后我会出教程&lt;/p&gt;
+&lt;h3 id=&quot;1-node-js的安装&quot;&gt;&lt;a href=&quot;#1-node-js的安装&quot; class=&quot;headerlink&quot; title=&quot;1.node.js的安装&quot;&gt;&lt;/a&gt;1.node.js的安装&lt;/h3&gt;&lt;p&gt;Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具。首先去官网下载 &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;下载地址&lt;/a&gt; 选一个自己电脑的配置的就好，下载exe的就很简单的搞定了,最好选LTS长期支持版，吧，这个提供了一个很有用的命令行工具npm，所以装过java，配置过vscode的都知道，要把这个添加到路径的，所以在Custom Setup这一步记得&lt;strong&gt;add to path&lt;/strong&gt;，&lt;del&gt;要不然手动安装会有问题&lt;/del&gt;，以后这可以帮助你学前端用，我以后再研究，可以通过这个指令验证一下是不是装好了，cmd下看看&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;node -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="web前端" scheme="https://www.wangziyu666.top/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="hexo搭建" scheme="https://www.wangziyu666.top/tags/hexo%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
+  
+</feed>

@@ -6,18 +6,23 @@
   
 
   
-  <title>Tag: 操作系统 | 王子瑜的不正经日常</title>
+  <title>各种位运算 | 王子瑜的不正经日常</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="王子瑜的不正经日常">
-<meta property="og:url" content="https://www.wangziyu666.top/tags/操作系统/index.html">
+  <meta name="description" content="总结一下各种位运算下面的来自网络各路大神，侵删，找不到出处了。1.&amp;amp;下面用8位的unsigned char做例子11 &amp;amp; 3 = 300001011 &amp;amp; 00000011 = 3&amp;amp;比较实用的例子看某个数是否能被2整除，一般都写成 if(n % 2 ==0)可以换成if((n &amp;amp; 1) == 0)2.|实用例子：可以用一个unsigned int来存储多个布尔">
+<meta name="keywords" content="位运算">
+<meta property="og:type" content="article">
+<meta property="og:title" content="各种位运算">
+<meta property="og:url" content="https://www.wangziyu666.top/2019/10/05/种位运算/index.html">
 <meta property="og:site_name" content="王子瑜的不正经日常">
+<meta property="og:description" content="总结一下各种位运算下面的来自网络各路大神，侵删，找不到出处了。1.&amp;amp;下面用8位的unsigned char做例子11 &amp;amp; 3 = 300001011 &amp;amp; 00000011 = 3&amp;amp;比较实用的例子看某个数是否能被2整除，一般都写成 if(n % 2 ==0)可以换成if((n &amp;amp; 1) == 0)2.|实用例子：可以用一个unsigned int来存储多个布尔">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-05T02:10:58.062Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="王子瑜的不正经日常">
+<meta name="twitter:title" content="各种位运算">
+<meta name="twitter:description" content="总结一下各种位运算下面的来自网络各路大神，侵删，找不到出处了。1.&amp;amp;下面用8位的unsigned char做例子11 &amp;amp; 3 = 300001011 &amp;amp; 00000011 = 3&amp;amp;比较实用的例子看某个数是否能被2整除，一般都写成 if(n % 2 ==0)可以换成if((n &amp;amp; 1) == 0)2.|实用例子：可以用一个unsigned int来存储多个布尔">
   
     <link rel="alternate" href="/atom.xml" title="王子瑜的不正经日常" type="application/atom+xml">
   
@@ -88,51 +93,102 @@
   </div>
 </header>
       <div id="middlecontent" title class="global-width sidebar-[object Object]">
-        <section id="main">
+        <section id="main"><article id="post-种位运算" class="article global-container article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="global-container archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
+    <header class="article-header">
       
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/16/leetcode146LRU缓存机制/">leetcode146LRU缓存机制</a>
+    <h1 class="article-title" itemprop="name">
+      各种位运算
     </h1>
   
-      
+
     </header>
-    <div class="article-meta archive-article-meta">
-      <a href="/2019/09/16/leetcode146LRU缓存机制/" class="article-date">
-  <time datetime="2019-09-16T11:13:04.000Z" itemprop="datePublished">2019-09-16</time>
+  
+  <div class="article-meta">
+    <a href="/2019/10/05/种位运算/" class="article-date">
+  <time datetime="2019-10-05T01:18:00.000Z" itemprop="datePublished">2019-10-05</time>
 </a>
-      
+    
   <div class="article-category">
-    <a class="article-category-link" href="/categories/leetcode/">leetcode</a>
+    <a class="article-category-link" href="/categories/算法/">算法</a>
   </div>
+
+    
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/位运算/">位运算</a></li></ul>
+
+  </div>
+  
+    <span id="busuanzi_container_page_pv">
+      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <h2 id="总结一下各种位运算"><a href="#总结一下各种位运算" class="headerlink" title="总结一下各种位运算"></a>总结一下各种位运算</h2><p>下面的来自网络各路大神，侵删，找不到出处了。<br><strong>1.&amp;</strong><br>下面用8位的unsigned char做例子<br>11 &amp; 3 = 3<br>00001011 &amp; 00000011 = 3<br>&amp;比较实用的例子<br>看某个数是否能被2整除，一般都写成 <code>if(n % 2 ==0)</code>可以换成<code>if((n &amp; 1) == 0)</code><br><strong>2.|</strong><br>实用例子：<br>可以用一个unsigned int来存储多个布尔值。比如一个文件有读权限，写权限，执行权限。看起来要记录3个布尔值。我们可以用一个unsigned int也可以完成任务。<br>一个数r来表示读权限，它只要更改个位来记录读权限的布尔值<br>00000001（表示有读权限）<br>00000000（表示没有读权限）<br>一个数w表示写权限，它只用二进制的倒数第二位来记录布尔值<br>00000010（表示有写权限）<br>00000000（表示没有写权限）<br>一个数x表示执行权限，它只用倒数第三位来记录布尔值<br>00000100（表示有执行权限）<br>00000000（表示没有执行权限）  </p>
+<p>那么同一个文件同时没有三种权限就是<br>~r | ~w | ~x即为00000000，就是0<br>只有读的权限就是<br>r | ~w | ~x即为00000001，就是1<br>以此类推<br>一个文件同时有三种权限就是<br>r | w |x 即为00000111，就是7  </p>
+<p><strong>3.&lt;&lt;左移位</strong><br>&lt;&lt;简单例子（向左移一位，右边自动补0）<br>11&lt;&lt;1=22<br>00001011 &lt;&lt; 100010110 = 22<br>相当于二进制的每个数都变成当前值的两倍，这些数都是加法，所以结果就是当前值的两倍。<br>n * 2 == (n &lt;&lt; 1)<br>注意可能会有溢出，而且每个语言，每个编译器对于溢出的处理不一样。  </p>
+<p><strong>4.&gt;&gt;向右移位</strong><br>简单例子（向右移一位，左边自动补0）<br>11 &gt;&gt; 1 = 5<br>00001011 &gt;&gt; 1<br>00000101 = 5<br>注意到最后一位的1被干掉了。<br>比较实用的例子：<br>int n = n / 2等价于int n = n &gt;&gt; 1等价于int n &gt;&gt;= 1<br><strong>5.^异或</strong><br>两个相同的数会变成0，反之是1<br>例子：<br>11 ^ 3 = 8<br>00001011 ^ 000000011 = 00001000 = 8<br>有一道leetcode的经典题：<br>有一个整形数组，只有一个数字出现了1次，其他的都出现2次，请找出来这个数<br>比如int t = { 1,2,3,3,2,1,5}要找到5.<br>用异或就完美了，所有相同的都会消失，留下的就是5，异或就是一个柠檬精，嫉妒成双成对的，所有成对的都就别干掉了。<br>这道题的代码：  </p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">singleNumber</span><span class="params">(<span class="keyword">int</span> A[],<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>;i &lt; n;i++)&#123;</span><br><span class="line">    		A[<span class="number">0</span>] ^= A[i];</span><br><span class="line">    	&#125;</span><br><span class="line">    	<span class="keyword">return</span> A[<span class="number">0</span>];</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>还有就是不用额外的存储空间来交换两个数：  </p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>&amp; x,<span class="keyword">int</span>&amp; y)</span></span>&#123;</span><br><span class="line">		x ^= y;</span><br><span class="line">    	y ^= x;</span><br><span class="line">    	x ^= y;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>可以简写为<code>x ^= y ^= x ^= y</code>（但是这种写法我在leetcode会报错，所以还是不要用简写了）  </p>
+<p><strong>6.~</strong><br>这个在加法中用到<br>x - y == x + <del>y + 1<br>所以</del>y = -y - 1比如~11 = -11 - 1 = -12  </p>
+<p><strong>7.%</strong><br>比如这个题:求100 % 8的优化解法。我们知道:<br>8刚好是2的3次方<br>所以100 % 8 == 100 - math.floor(100/8)*8 == 100 - ((100 &gt;&gt; 3)&lt;&lt;3)  </p>
+<p><strong>8.位运算的优先级</strong><br>总的来说比较低，所以一定要加括号  </p>
+<p><strong>9.生产生活中的用途</strong><br><del>为了装逼降低代码可读性</del>，在oj中刷题可以提高速度，而且搜索引擎就是用这种布尔运算来定位你搜索的东西的，如果某一篇文章属于这个类，就会在这个类对应的位置赋值为1，还有深度学习算法里的标签，在对应的类上面是1，位运算是计算机的“唯一运算”，等等，在oj上刷题，只要有关二进制的种种，位运算一定要被想起来呀。</p>
 
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/操作系统/">操作系统</a></li></ul>
-
     </div>
+    
+      <footer class="article-footer">
+        完
+      </footer>
+    
   </div>
+  
+    
+<nav id="article-nav">
+  <div class="article-nav-block">
+    
+  </div>
+  <div class="article-nav-block">
+    
+      <a href="/2019/10/04/摇算法/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">手摇算法</div>
+        <strong class="article-nav-caption"></strong>
+      </a>
+    
+  </div>
+</nav>
+
+    
+<div id="gitalkContainer"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+  clientID: 'e9dc742df01536e88e12',
+        clientSecret: 'ae9c7c98d422233c89a182200df7306f37ee90a1',
+        id: md5(location.pathname),
+        repo: 'pilipili520.github.io',
+        owner: 'pilipili520',
+        admin: ['pilipili520'],
+		distractionFreeMode: false
+})
+gitalk.render('gitalkContainer')
+</script>
+
+
+  
+  
 </article>
-  
-  
-    </div></section>
-  
-
-
 </section>
         <aside id="sidebar">
   
