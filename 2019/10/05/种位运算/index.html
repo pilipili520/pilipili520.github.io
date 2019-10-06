@@ -11,18 +11,18 @@
   
   
   
-  <meta name="description" content="总结一下各种位运算下面的来自网络各路大神，侵删，找不到出处了。1.&amp;amp;下面用8位的unsigned char做例子11 &amp;amp; 3 = 300001011 &amp;amp; 00000011 = 3&amp;amp;比较实用的例子看某个数是否能被2整除，一般都写成 if(n % 2 ==0)可以换成if((n &amp;amp; 1) == 0)2.|实用例子：可以用一个unsigned int来存储多个布尔">
+  <meta name="description" content="总结一下各种位运算下面的来自网络各路大神，侵删，找不到出处了。">
 <meta name="keywords" content="位运算">
 <meta property="og:type" content="article">
 <meta property="og:title" content="各种位运算">
 <meta property="og:url" content="https://www.wangziyu666.top/2019/10/05/种位运算/index.html">
 <meta property="og:site_name" content="王子瑜的不正经日常">
-<meta property="og:description" content="总结一下各种位运算下面的来自网络各路大神，侵删，找不到出处了。1.&amp;amp;下面用8位的unsigned char做例子11 &amp;amp; 3 = 300001011 &amp;amp; 00000011 = 3&amp;amp;比较实用的例子看某个数是否能被2整除，一般都写成 if(n % 2 ==0)可以换成if((n &amp;amp; 1) == 0)2.|实用例子：可以用一个unsigned int来存储多个布尔">
+<meta property="og:description" content="总结一下各种位运算下面的来自网络各路大神，侵删，找不到出处了。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-05T02:10:58.062Z">
+<meta property="og:updated_time" content="2019-10-05T02:17:07.441Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="各种位运算">
-<meta name="twitter:description" content="总结一下各种位运算下面的来自网络各路大神，侵删，找不到出处了。1.&amp;amp;下面用8位的unsigned char做例子11 &amp;amp; 3 = 300001011 &amp;amp; 00000011 = 3&amp;amp;比较实用的例子看某个数是否能被2整除，一般都写成 if(n % 2 ==0)可以换成if((n &amp;amp; 1) == 0)2.|实用例子：可以用一个unsigned int来存储多个布尔">
+<meta name="twitter:description" content="总结一下各种位运算下面的来自网络各路大神，侵删，找不到出处了。">
   
     <link rel="alternate" href="/atom.xml" title="王子瑜的不正经日常" type="application/atom+xml">
   
@@ -128,7 +128,9 @@
     
     <div class="article-content article-content-cloud" itemprop="articleBody">
       
-        <h2 id="总结一下各种位运算"><a href="#总结一下各种位运算" class="headerlink" title="总结一下各种位运算"></a>总结一下各种位运算</h2><p>下面的来自网络各路大神，侵删，找不到出处了。<br><strong>1.&amp;</strong><br>下面用8位的unsigned char做例子<br>11 &amp; 3 = 3<br>00001011 &amp; 00000011 = 3<br>&amp;比较实用的例子<br>看某个数是否能被2整除，一般都写成 <code>if(n % 2 ==0)</code>可以换成<code>if((n &amp; 1) == 0)</code><br><strong>2.|</strong><br>实用例子：<br>可以用一个unsigned int来存储多个布尔值。比如一个文件有读权限，写权限，执行权限。看起来要记录3个布尔值。我们可以用一个unsigned int也可以完成任务。<br>一个数r来表示读权限，它只要更改个位来记录读权限的布尔值<br>00000001（表示有读权限）<br>00000000（表示没有读权限）<br>一个数w表示写权限，它只用二进制的倒数第二位来记录布尔值<br>00000010（表示有写权限）<br>00000000（表示没有写权限）<br>一个数x表示执行权限，它只用倒数第三位来记录布尔值<br>00000100（表示有执行权限）<br>00000000（表示没有执行权限）  </p>
+        <h2 id="总结一下各种位运算"><a href="#总结一下各种位运算" class="headerlink" title="总结一下各种位运算"></a>总结一下各种位运算</h2><p>下面的来自网络各路大神，侵删，找不到出处了。</p>
+<a id="more"></a>
+<p><strong>1.&amp;</strong><br>下面用8位的unsigned char做例子<br>11 &amp; 3 = 3<br>00001011 &amp; 00000011 = 3<br>&amp;比较实用的例子<br>看某个数是否能被2整除，一般都写成 <code>if(n % 2 ==0)</code>可以换成<code>if((n &amp; 1) == 0)</code><br><strong>2.|</strong><br>实用例子：<br>可以用一个unsigned int来存储多个布尔值。比如一个文件有读权限，写权限，执行权限。看起来要记录3个布尔值。我们可以用一个unsigned int也可以完成任务。<br>一个数r来表示读权限，它只要更改个位来记录读权限的布尔值<br>00000001（表示有读权限）<br>00000000（表示没有读权限）<br>一个数w表示写权限，它只用二进制的倒数第二位来记录布尔值<br>00000010（表示有写权限）<br>00000000（表示没有写权限）<br>一个数x表示执行权限，它只用倒数第三位来记录布尔值<br>00000100（表示有执行权限）<br>00000000（表示没有执行权限）  </p>
 <p>那么同一个文件同时没有三种权限就是<br>~r | ~w | ~x即为00000000，就是0<br>只有读的权限就是<br>r | ~w | ~x即为00000001，就是1<br>以此类推<br>一个文件同时有三种权限就是<br>r | w |x 即为00000111，就是7  </p>
 <p><strong>3.&lt;&lt;左移位</strong><br>&lt;&lt;简单例子（向左移一位，右边自动补0）<br>11&lt;&lt;1=22<br>00001011 &lt;&lt; 100010110 = 22<br>相当于二进制的每个数都变成当前值的两倍，这些数都是加法，所以结果就是当前值的两倍。<br>n * 2 == (n &lt;&lt; 1)<br>注意可能会有溢出，而且每个语言，每个编译器对于溢出的处理不一样。  </p>
 <p><strong>4.&gt;&gt;向右移位</strong><br>简单例子（向右移一位，左边自动补0）<br>11 &gt;&gt; 1 = 5<br>00001011 &gt;&gt; 1<br>00000101 = 5<br>注意到最后一位的1被干掉了。<br>比较实用的例子：<br>int n = n / 2等价于int n = n &gt;&gt; 1等价于int n &gt;&gt;= 1<br><strong>5.^异或</strong><br>两个相同的数会变成0，反之是1<br>例子：<br>11 ^ 3 = 8<br>00001011 ^ 000000011 = 00001000 = 8<br>有一道leetcode的经典题：<br>有一个整形数组，只有一个数字出现了1次，其他的都出现2次，请找出来这个数<br>比如int t = { 1,2,3,3,2,1,5}要找到5.<br>用异或就完美了，所有相同的都会消失，留下的就是5，异或就是一个柠檬精，嫉妒成双成对的，所有成对的都就别干掉了。<br>这道题的代码：  </p>
@@ -155,6 +157,15 @@
     
 <nav id="article-nav">
   <div class="article-nav-block">
+    
+      <a href="/2019/10/06/关Bash的种种/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption"></strong>
+        <div class="article-nav-title">
+          
+            有关Bash的种种
+          
+        </div>
+      </a>
     
   </div>
   <div class="article-nav-block">
@@ -347,7 +358,7 @@ jQuery.rnd = function(m,n) {
   <div class="widget-box">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C/">C++</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/leetcode/">leetcode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/web前端/">web前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/感悟/">感悟</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/算法/">算法</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/计算机组成原理/">计算机组成原理</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/讲座/">讲座</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C/">C++</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/bash/">bash</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/leetcode/">leetcode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/web前端/">web前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/感悟/">感悟</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/算法/">算法</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/计算机组成原理/">计算机组成原理</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/讲座/">讲座</a></li></ul>
     </div>
   </div>
 
@@ -357,7 +368,7 @@ jQuery.rnd = function(m,n) {
   <div class="widget-box">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/">MySQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dp/">dp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo搭建/">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo美化/">hexo美化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string类/">string类</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/位运算/">位运算</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符串处理/">字符串处理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符串翻转/">字符串翻转</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/寄存器/">寄存器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/排序/">排序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生物计算机/">生物计算机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/职业/">职业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/语法/">语法</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/">MySQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bash/">bash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dp/">dp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo搭建/">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo美化/">hexo美化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string类/">string类</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/位运算/">位运算</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符串处理/">字符串处理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符串翻转/">字符串翻转</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/寄存器/">寄存器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/排序/">排序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生物计算机/">生物计算机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/职业/">职业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/语法/">语法</a></li></ul>
     </div>
   </div>
 
@@ -379,6 +390,10 @@ jQuery.rnd = function(m,n) {
       <ul>
         
           <li>
+            <a href="/2019/10/06/关Bash的种种/">有关Bash的种种</a>
+          </li>
+        
+          <li>
             <a href="/2019/10/05/种位运算/">各种位运算</a>
           </li>
         
@@ -392,10 +407,6 @@ jQuery.rnd = function(m,n) {
         
           <li>
             <a href="/2019/10/02/eetcode174地下城游戏/">leetcode174地下城游戏</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/30/xo中插入自己做的静态网页/">hexo中插入自己做的静态网页</a>
           </li>
         
       </ul>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.wangziyu666.top/"/>
-  <updated>2019-10-05T02:10:58.062Z</updated>
+  <updated>2019-10-06T01:15:07.058Z</updated>
   <id>https://www.wangziyu666.top/</id>
   
   <author>
@@ -17,21 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>有关Bash的种种</title>
+    <link href="https://www.wangziyu666.top/2019/10/06/%E5%85%B3Bash%E7%9A%84%E7%A7%8D%E7%A7%8D/"/>
+    <id>https://www.wangziyu666.top/2019/10/06/关Bash的种种/</id>
+    <published>2019-10-06T00:43:00.000Z</published>
+    <updated>2019-10-06T01:15:07.058Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;缘起是leetcode的一道题&quot;&gt;&lt;a href=&quot;#缘起是leetcode的一道题&quot; class=&quot;headerlink&quot; title=&quot;缘起是leetcode的一道题&quot;&gt;&lt;/a&gt;缘起是leetcode的一道题&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/transpose-file/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode-cn.com/problems/transpose-file/&lt;/a&gt;  &lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;给定一个文件 file.txt，转置它的内容。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;你可以假设每行列数相同，并且每个字段由 &lt;span class=&quot;string&quot;&gt;&#39; &#39;&lt;/span&gt; 分隔.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;示例:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;假设 file.txt 文件内容如下：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;name age&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;alice 21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ryan 30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;应当输出：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;name alice ryan&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;age 21 30&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="bash" scheme="https://www.wangziyu666.top/categories/bash/"/>
+    
+    
+      <category term="bash" scheme="https://www.wangziyu666.top/tags/bash/"/>
+    
+  </entry>
+  
+  <entry>
     <title>各种位运算</title>
     <link href="https://www.wangziyu666.top/2019/10/05/%E7%A7%8D%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
     <id>https://www.wangziyu666.top/2019/10/05/种位运算/</id>
     <published>2019-10-05T01:18:00.000Z</published>
-    <updated>2019-10-05T02:10:58.062Z</updated>
+    <updated>2019-10-05T02:17:07.441Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;总结一下各种位运算&quot;&gt;&lt;a href=&quot;#总结一下各种位运算&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h2 id=&quot;总结一下各种位运算&quot;&gt;&lt;a href=&quot;#总结一下各种位运算&quot; class=&quot;headerlink&quot; title=&quot;总结一下各种位运算&quot;&gt;&lt;/a&gt;总结一下各种位运算&lt;/h2&gt;&lt;p&gt;下面的来自网络各路大神，侵删，找不到出处了。&lt;/p&gt;
     
     </summary>
     
@@ -452,29 +468,6 @@
     
     
       <category term="dp" scheme="https://www.wangziyu666.top/tags/dp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>记录自己是如何被建立起来的</title>
-    <link href="https://www.wangziyu666.top/2019/09/13/hello-world/"/>
-    <id>https://www.wangziyu666.top/2019/09/13/hello-world/</id>
-    <published>2019-09-13T13:17:33.000Z</published>
-    <updated>2019-09-17T01:50:18.987Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;记录一下我搭建hexo-github&quot;&gt;&lt;a href=&quot;#记录一下我搭建hexo-github&quot; class=&quot;headerlink&quot; title=&quot;记录一下我搭建hexo+github&quot;&gt;&lt;/a&gt;记录一下我搭建hexo+github&lt;/h2&gt;&lt;p&gt;ps:我是windows10下玩耍的，以前我是在腾讯云里买的服务器想学javaweb的现在，自己捅咕得很开心，日后我会出教程&lt;/p&gt;
-&lt;h3 id=&quot;1-node-js的安装&quot;&gt;&lt;a href=&quot;#1-node-js的安装&quot; class=&quot;headerlink&quot; title=&quot;1.node.js的安装&quot;&gt;&lt;/a&gt;1.node.js的安装&lt;/h3&gt;&lt;p&gt;Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具。首先去官网下载 &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;下载地址&lt;/a&gt; 选一个自己电脑的配置的就好，下载exe的就很简单的搞定了,最好选LTS长期支持版，吧，这个提供了一个很有用的命令行工具npm，所以装过java，配置过vscode的都知道，要把这个添加到路径的，所以在Custom Setup这一步记得&lt;strong&gt;add to path&lt;/strong&gt;，&lt;del&gt;要不然手动安装会有问题&lt;/del&gt;，以后这可以帮助你学前端用，我以后再研究，可以通过这个指令验证一下是不是装好了，cmd下看看&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;node -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="web前端" scheme="https://www.wangziyu666.top/categories/web%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="hexo搭建" scheme="https://www.wangziyu666.top/tags/hexo%E6%90%AD%E5%BB%BA/"/>
     
   </entry>
   

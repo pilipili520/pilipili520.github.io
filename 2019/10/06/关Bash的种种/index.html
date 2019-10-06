@@ -6,23 +6,23 @@
   
 
   
-  <title>各种常见寄存器的使用 | 王子瑜的不正经日常</title>
+  <title>有关Bash的种种 | 王子瑜的不正经日常</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
-  <meta name="description" content="x86体系的一些寄存器4个通用寄存器：AX,BX,CX,DX是16bits的用于存储堆栈指针的寄存器是esp在讲CPU架构时经常提到的program counter是指用于保存下一条指令的地址寄存器，在x86中具体是eip可执行程序的程序段，数据段，堆栈段等，这三个段的地址分别在CS,DS,SS,中存储">
-<meta name="keywords" content="寄存器">
+  <meta name="description" content="缘起是leetcode的一道题https://leetcode-cn.com/problems/transpose-file/   12345678910111213141516给定一个文件 file.txt，转置它的内容。你可以假设每行列数相同，并且每个字段由 &apos; &apos; 分隔.示例:假设 file.txt 文件内容如下：name agealice 21ryan 30应当输出：name alice">
+<meta name="keywords" content="bash">
 <meta property="og:type" content="article">
-<meta property="og:title" content="各种常见寄存器的使用">
-<meta property="og:url" content="https://www.wangziyu666.top/2019/09/20/常见寄存器的使用/index.html">
+<meta property="og:title" content="有关Bash的种种">
+<meta property="og:url" content="https://www.wangziyu666.top/2019/10/06/关Bash的种种/index.html">
 <meta property="og:site_name" content="王子瑜的不正经日常">
-<meta property="og:description" content="x86体系的一些寄存器4个通用寄存器：AX,BX,CX,DX是16bits的用于存储堆栈指针的寄存器是esp在讲CPU架构时经常提到的program counter是指用于保存下一条指令的地址寄存器，在x86中具体是eip可执行程序的程序段，数据段，堆栈段等，这三个段的地址分别在CS,DS,SS,中存储">
+<meta property="og:description" content="缘起是leetcode的一道题https://leetcode-cn.com/problems/transpose-file/   12345678910111213141516给定一个文件 file.txt，转置它的内容。你可以假设每行列数相同，并且每个字段由 &apos; &apos; 分隔.示例:假设 file.txt 文件内容如下：name agealice 21ryan 30应当输出：name alice">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-22T03:28:03.447Z">
+<meta property="og:updated_time" content="2019-10-06T01:15:07.058Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="各种常见寄存器的使用">
-<meta name="twitter:description" content="x86体系的一些寄存器4个通用寄存器：AX,BX,CX,DX是16bits的用于存储堆栈指针的寄存器是esp在讲CPU架构时经常提到的program counter是指用于保存下一条指令的地址寄存器，在x86中具体是eip可执行程序的程序段，数据段，堆栈段等，这三个段的地址分别在CS,DS,SS,中存储">
+<meta name="twitter:title" content="有关Bash的种种">
+<meta name="twitter:description" content="缘起是leetcode的一道题https://leetcode-cn.com/problems/transpose-file/   12345678910111213141516给定一个文件 file.txt，转置它的内容。你可以假设每行列数相同，并且每个字段由 &apos; &apos; 分隔.示例:假设 file.txt 文件内容如下：name agealice 21ryan 30应当输出：name alice">
   
     <link rel="alternate" href="/atom.xml" title="王子瑜的不正经日常" type="application/atom+xml">
   
@@ -93,29 +93,29 @@
   </div>
 </header>
       <div id="middlecontent" title class="global-width sidebar-[object Object]">
-        <section id="main"><article id="post-常见寄存器的使用" class="article global-container article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-关Bash的种种" class="article global-container article-type-post" itemscope itemprop="blogPost">
   
     <header class="article-header">
       
   
     <h1 class="article-title" itemprop="name">
-      各种常见寄存器的使用
+      有关Bash的种种
     </h1>
   
 
     </header>
   
   <div class="article-meta">
-    <a href="/2019/09/20/常见寄存器的使用/" class="article-date">
-  <time datetime="2019-09-20T07:42:01.000Z" itemprop="datePublished">2019-09-20</time>
+    <a href="/2019/10/06/关Bash的种种/" class="article-date">
+  <time datetime="2019-10-06T00:43:00.000Z" itemprop="datePublished">2019-10-06</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/计算机组成原理/">计算机组成原理</a>
+    <a class="article-category-link" href="/categories/bash/">bash</a>
   </div>
 
     
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/寄存器/">寄存器</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bash/">bash</a></li></ul>
 
   </div>
   
@@ -128,7 +128,25 @@
     
     <div class="article-content article-content-cloud" itemprop="articleBody">
       
-        <p>x86体系的一些寄存器<br>4个通用寄存器：<br>AX,BX,CX,DX是16bits的<br>用于存储堆栈指针的寄存器是esp<br>在讲CPU架构时经常提到的program counter是指用于保存下一条指令的地址寄存器，在x86中具体是eip<br>可执行程序的程序段，数据段，堆栈段等，这三个段的地址分别在CS,DS,SS,中存储</p>
+        <h4 id="缘起是leetcode的一道题"><a href="#缘起是leetcode的一道题" class="headerlink" title="缘起是leetcode的一道题"></a>缘起是leetcode的一道题</h4><p><a href="https://leetcode-cn.com/problems/transpose-file/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/transpose-file/</a>  </p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">给定一个文件 file.txt，转置它的内容。</span><br><span class="line"></span><br><span class="line">你可以假设每行列数相同，并且每个字段由 <span class="string">' '</span> 分隔.</span><br><span class="line"></span><br><span class="line">示例:</span><br><span class="line"></span><br><span class="line">假设 file.txt 文件内容如下：</span><br><span class="line"></span><br><span class="line">name age</span><br><span class="line">alice 21</span><br><span class="line">ryan 30</span><br><span class="line"></span><br><span class="line">应当输出：</span><br><span class="line"></span><br><span class="line">name alice ryan</span><br><span class="line">age 21 30</span><br></pre></td></tr></table></figure></div>
+
+<a id="more"></a>
+<p>有java啥的很容易实现就是把a[i][j]反着输出a[j][i]就ok了，但是bash不太熟悉，<del>discuss吧</del>  </p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">awk <span class="string">'</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">    for (i = 1; i &lt;= NF; i++) &#123;</span></span><br><span class="line"><span class="string">        if(NR == 1) &#123;</span></span><br><span class="line"><span class="string">            s[i] = $i;</span></span><br><span class="line"><span class="string">        &#125; else &#123;</span></span><br><span class="line"><span class="string">            s[i] = s[i] " " $i;</span></span><br><span class="line"><span class="string">        &#125;</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">END &#123;</span></span><br><span class="line"><span class="string">    for (i = 1; s[i] != ""; i++) &#123;</span></span><br><span class="line"><span class="string">        print s[i];</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">&#125;'</span> file.txt</span><br></pre></td></tr></table></figure></div>
+
+<p>emmmmm,这几个字母我都不太懂啥意思，从头百度：<br><a href="https://leetcode-cn.com/problems/transpose-file/solution/awkming-ling-yong-shu-zu-chu-cun-dai-shu-chu-jie-g/" target="_blank" rel="noopener">gao-si-huang-bu</a>看到了这个大佬的题解<br>awk是一行一行地处理文本文件，运行流程是：</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">先运行BEGIN后的&#123;Action&#125;，相当于表头</span><br><span class="line">再运行&#123;Action&#125;中的文件处理主体命令</span><br><span class="line">最后运行END后的&#123;Action&#125;中的命令</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">有几个经常用到的awk常量：NF是当前行的field字段数；NR是正在处理的当前行数。</span><br><span class="line"></span><br><span class="line">注意到是转置，假如原始文本有m行n列（字段），那么转置后的文本应该有n行m列，即原始文本的每个字段都对应新文本的一行。我们可以用数组s来储存新文本，将新文本的每一行存为数组s的一个元素。(bash是解释型的脚本语言和python一样不用提前预定空间)</span><br><span class="line"></span><br><span class="line">在END之前我们遍历file.txt的每一行，并做一个判断：在第一行时，每碰到一个字段就将其按顺序放在s数组中；从第二行开始起，每碰到一个字段就将其追加到对应元素的末尾（中间添加一个空格）。</span><br><span class="line"></span><br><span class="line">文本处理完了，最后需要输出。在END后遍历数组，输出每一行。注意printf不会自动换行，而print会自动换行。</span><br></pre></td></tr></table></figure></div>
+
+<p>虽然看完大佬的解释懂了一点，然后有看到国外的大佬：  </p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">awkle</span></span>()&#123;</span><br><span class="line">   awk <span class="string">'</span></span><br><span class="line"><span class="string">    &#123;</span></span><br><span class="line"><span class="string">        for (i = 1; i &lt;= NF; i++) &#123;</span></span><br><span class="line"><span class="string">           if(NR == 1) &#123;</span></span><br><span class="line"><span class="string">               print "\nNR == 1";</span></span><br><span class="line"><span class="string">               s[i] = $i;</span></span><br><span class="line"><span class="string">               print $i;</span></span><br><span class="line"><span class="string">           &#125; else &#123;</span></span><br><span class="line"><span class="string">              print "\nNR != 1";</span></span><br><span class="line"><span class="string">              print s[i];</span></span><br><span class="line"><span class="string">              s[i] = s[i] " " $i;</span></span><br><span class="line"><span class="string">              print s[i];</span></span><br><span class="line"><span class="string">           &#125;</span></span><br><span class="line"><span class="string">        &#125;</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">    END &#123;</span></span><br><span class="line"><span class="string">        for (i = 1; s[i] != ""; i++) &#123;</span></span><br><span class="line"><span class="string">           print s[i];</span></span><br><span class="line"><span class="string">        &#125;</span></span><br><span class="line"><span class="string">    &#125;'</span>  <span class="variable">$1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>output:</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">NR == 1</span><br><span class="line">name</span><br><span class="line"></span><br><span class="line">NR == 1</span><br><span class="line">age</span><br><span class="line"></span><br><span class="line">NR != 1</span><br><span class="line">name</span><br><span class="line">name alice</span><br><span class="line"></span><br><span class="line">NR != 1</span><br><span class="line">age</span><br><span class="line">age 21</span><br><span class="line"></span><br><span class="line">NR != 1</span><br><span class="line">name alice</span><br><span class="line">name alice ryan</span><br><span class="line"></span><br><span class="line">NR != 1</span><br><span class="line">age 21</span><br><span class="line">age 21 30</span><br><span class="line">name alice ryan</span><br><span class="line">age 21 30</span><br></pre></td></tr></table></figure></div>
+
+<p>顺间一目了然呀</p>
 
       
     </div>
@@ -143,20 +161,11 @@
 <nav id="article-nav">
   <div class="article-nav-block">
     
-      <a href="/2019/09/21/小的感悟吧/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption"></strong>
-        <div class="article-nav-title">
-          
-            论物联网下的全栈工程师
-          
-        </div>
-      </a>
-    
   </div>
   <div class="article-nav-block">
     
-      <a href="/2019/09/20/etcode184部门工资最高的员工/" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">leetcode184部门工资最高的员工</div>
+      <a href="/2019/10/05/种位运算/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">各种位运算</div>
         <strong class="article-nav-caption"></strong>
       </a>
     
