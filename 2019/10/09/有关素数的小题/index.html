@@ -6,18 +6,22 @@
   
 
   
-  <title>Category: Java | 王子瑜的不正经日常</title>
+  <title>一个有关素数的小题 | 王子瑜的不正经日常</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="王子瑜的不正经日常">
-<meta property="og:url" content="https://www.wangziyu666.top/categories/Java/index.html">
+  <meta name="description" content="有关素数判断高效法 无脑超时法  1234567891011121314public boolean countPrimes(long number) &amp;#123;		if (number ==2) &amp;#123;			return true;		&amp;#125;        else if(number &amp;lt;2)&amp;#123;        	return false;        &amp;#125;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一个有关素数的小题">
+<meta property="og:url" content="https://www.wangziyu666.top/2019/10/09/有关素数的小题/index.html">
 <meta property="og:site_name" content="王子瑜的不正经日常">
+<meta property="og:description" content="有关素数判断高效法 无脑超时法  1234567891011121314public boolean countPrimes(long number) &amp;#123;		if (number ==2) &amp;#123;			return true;		&amp;#125;        else if(number &amp;lt;2)&amp;#123;        	return false;        &amp;#125;">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-09T01:04:45.977Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="王子瑜的不正经日常">
+<meta name="twitter:title" content="一个有关素数的小题">
+<meta name="twitter:description" content="有关素数判断高效法 无脑超时法  1234567891011121314public boolean countPrimes(long number) &amp;#123;		if (number ==2) &amp;#123;			return true;		&amp;#125;        else if(number &amp;lt;2)&amp;#123;        	return false;        &amp;#125;">
   
     <link rel="alternate" href="/atom.xml" title="王子瑜的不正经日常" type="application/atom+xml">
   
@@ -88,51 +92,110 @@
   </div>
 </header>
       <div id="middlecontent" title class="global-width sidebar-[object Object]">
-        <section id="main">
+        <section id="main"><article id="post-有关素数的小题" class="article global-container article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="global-container archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
+    <header class="article-header">
       
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/19/java的语法应用-list/">java的语法应用持续补充</a>
+    <h1 class="article-title" itemprop="name">
+      一个有关素数的小题
     </h1>
   
-      
+
     </header>
-    <div class="article-meta archive-article-meta">
-      <a href="/2019/09/19/java的语法应用-list/" class="article-date">
-  <time datetime="2019-09-18T23:28:02.000Z" itemprop="datePublished">2019-09-19</time>
+  
+  <div class="article-meta">
+    <a href="/2019/10/09/有关素数的小题/" class="article-date">
+  <time datetime="2019-10-09T00:29:11.000Z" itemprop="datePublished">2019-10-09</time>
 </a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Java/">Java</a>
+    
+    
   </div>
+  
+    <span id="busuanzi_container_page_pv">
+      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <h2 id="有关素数判断高效法"><a href="#有关素数判断高效法" class="headerlink" title="有关素数判断高效法"></a>有关素数判断高效法</h2><ul>
+<li>无脑超时法  <div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">countPrimes</span><span class="params">(<span class="keyword">long</span> number)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (number ==<span class="number">2</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">		&#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(number &lt;<span class="number">2</span>)&#123;</span><br><span class="line">        	<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">long</span> i=<span class="number">2</span>; i&lt;Math.sqrt(number); i++)&#123;</span><br><span class="line">			<span class="keyword">if</span> ((number % i)==<span class="number">0</span>) &#123;</span><br><span class="line">				<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure></div>
+
+</li>
+</ul>
+<a id="more"></a>
+
+<p>讲解：</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">12 = 2 × 6</span><br><span class="line">12 = 3 × 4</span><br><span class="line">12 = sqrt(12) × sqrt(12)</span><br><span class="line">12 = 4 × 3</span><br><span class="line">12 = 6 × 2</span><br></pre></td></tr></table></figure></div>
+
+<p>所以看一个数是不是素数只要看sqart(n)之前的就可以了</p>
+<ul>
+<li>升级1.0版<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">countPrimes</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">boolean</span>[] notPrime = <span class="keyword">new</span> <span class="keyword">boolean</span>[n];</span><br><span class="line">        <span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>;i &lt; n;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(notPrime[i] == <span class="keyword">false</span>)&#123;</span><br><span class="line">                cnt++;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">2</span>; i*j &lt; n;j++)&#123;</span><br><span class="line">                    notPrime[i*j] = <span class="keyword">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cnt;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></div>
+
+</li>
+</ul>
+<p>花费了空间，提前记录有哪些不是素数，机制。  </p>
+<p>下面的转自：<a href="https://leetcode-cn.com/problems/count-primes/solution/ru-he-gao-xiao-pan-ding-shai-xuan-su-shu-by-labula/" target="_blank" rel="noopener">作者：labuladong</a></p>
+<ul>
+<li>升级1.5版<br>高效解决这个问题的核心思路是和上面的常规思路反着来：<br>首先从 2 开始，我们知道 2 是一个素数，那么 2 × 2 = 4, 3 × 2 = 6, 4 × 2 = 8… 都不可能是素数了。<br>然后我们发现 3 也是素数，那么 3 × 2 = 6, 3 × 3 = 9, 3 × 4 = 12… 也都不可能是素数了。</li>
+</ul>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">countPrimes</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">boolean</span>[] isPrim = <span class="keyword">new</span> <span class="keyword">boolean</span>[n];</span><br><span class="line">    <span class="comment">// 将数组都初始化为 true</span></span><br><span class="line">    Arrays.fill(isPrim, <span class="keyword">true</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt; n; i++) </span><br><span class="line">        <span class="keyword">if</span> (isPrim[i]) </span><br><span class="line">            <span class="comment">// i 的倍数不可能是素数了</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">2</span> * i; j &lt; n; j += i) </span><br><span class="line">                    isPrim[j] = <span class="keyword">false</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt; n; i++)</span><br><span class="line">        <span class="keyword">if</span> (isPrim[i]) count++;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> count;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>升级2.0版<br>（<del>并没有特明白i * i &lt; n</del>）<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">countPrimes</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">boolean</span>[] isPrime = <span class="keyword">new</span> <span class="keyword">boolean</span>[n];</span><br><span class="line">        Arrays.fill(isPrime,<span class="keyword">true</span>);</span><br><span class="line">  </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>;i * i &lt; n;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(isPrime[i])&#123;</span><br><span class="line">                cnt++;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> j = i * i; j &lt; n;j += i)&#123;</span><br><span class="line">                    isPrime[j] = <span class="keyword">false</span>;<span class="comment">//i的倍数不可能是素数了</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>;i &lt; n;i++)&#123;</span><br><span class="line">        	<span class="keyword">if</span>(isPrime[i])cnt++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cnt;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></div>
+
+</li>
+</ul>
 
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/语法/">语法</a></li></ul>
-
     </div>
+    
+      <footer class="article-footer">
+        完
+      </footer>
+    
   </div>
+  
+    
+<nav id="article-nav">
+  <div class="article-nav-block">
+    
+  </div>
+  <div class="article-nav-block">
+    
+      <a href="/2019/10/06/关Bash的种种/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">有关Bash的种种</div>
+        <strong class="article-nav-caption"></strong>
+      </a>
+    
+  </div>
+</nav>
+
+    
+<div id="gitalkContainer"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+  clientID: 'e9dc742df01536e88e12',
+        clientSecret: 'ae9c7c98d422233c89a182200df7306f37ee90a1',
+        id: md5(location.pathname),
+        repo: 'pilipili520.github.io',
+        owner: 'pilipili520',
+        admin: ['pilipili520'],
+		distractionFreeMode: false
+})
+gitalk.render('gitalkContainer')
+</script>
+
+
+  
+  
 </article>
-  
-  
-    </div></section>
-  
-
-
 </section>
         <aside id="sidebar">
   
