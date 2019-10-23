@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.wangziyu666.top/"/>
-  <updated>2019-10-11T23:58:15.059Z</updated>
+  <updated>2019-10-23T12:31:26.143Z</updated>
   <id>https://www.wangziyu666.top/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Java多线程练习</title>
+    <link href="https://www.wangziyu666.top/2019/10/23/ava%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BB%83%E4%B9%A0/"/>
+    <id>https://www.wangziyu666.top/2019/10/23/ava多线程练习/</id>
+    <published>2019-10-23T10:31:00.000Z</published>
+    <updated>2019-10-23T12:31:26.143Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;多线程基础练习&quot;&gt;&lt;a href=&quot;#多线程基础练习&quot; class=&quot;headerlink&quot; title=&quot;多线程基础练习&quot;&gt;&lt;/a&gt;多线程基础练习&lt;/h2&gt;&lt;p&gt;题目是来源于bit的金旭亮老师&lt;br&gt;任务2：创建间隔时间不等的定时调用任务：&lt;br&gt;比如第1次隔2秒调用，第2次隔4秒，然后第3次隔2秒，由此不断地循环……&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="多线程" scheme="https://www.wangziyu666.top/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>字典树</title>
     <link href="https://www.wangziyu666.top/2019/10/12/%E5%85%B8%E6%A0%91/"/>
     <id>https://www.wangziyu666.top/2019/10/12/典树/</id>
     <published>2019-10-11T23:24:00.000Z</published>
-    <updated>2019-10-11T23:58:15.059Z</updated>
+    <updated>2019-10-15T02:12:22.071Z</updated>
     
     <summary type="html">
     
@@ -446,27 +465,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>c++的string类函数怎么记不住</title>
-    <link href="https://www.wangziyu666.top/2019/09/17/c-%E7%9A%84string%E7%B1%BB%E5%87%BD%E6%95%B0%E6%80%8E%E4%B9%88%E8%AE%B0%E4%B8%8D%E4%BD%8F/"/>
-    <id>https://www.wangziyu666.top/2019/09/17/c-的string类函数怎么记不住/</id>
-    <published>2019-09-16T23:52:26.000Z</published>
-    <updated>2019-09-17T00:30:27.884Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;转自&lt;a href=&quot;https://blog.csdn.net/djt4541/article/details/82699515&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/djt4541/article/details/82699515&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="C++" scheme="https://www.wangziyu666.top/categories/C/"/>
-    
-    
-      <category term="string类" scheme="https://www.wangziyu666.top/tags/string%E7%B1%BB/"/>
     
   </entry>
   
